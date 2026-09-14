@@ -49,9 +49,11 @@ HPCs address some of these problems:
 
 Then we will look at [job scripts](https://github-pages.arc.ucl.ac.uk/hpc-intro/13-scheduler/index.html), which is how we tell the cluster what we want to do.
 
-Now, we will submit the python code we wrote in week 1 as a job. First, [convert the notebook to a python file](https://code.visualstudio.com/docs/python/jupyter-support-py#_convert-jupyter-notebooks-to-python-code-file). If you are working from the command line, make sure you are in the project home folder and have the correct path:
-
-` jupyter nbconvert --to python workshops/W4_AI_LLMs_ML/W4_ML_demo.ipynb`
+Now, we will submit the python code we wrote in week 1 as a job.
+First, convert the notebook to a python file:
+- Install the Visual Studio Code Jupyter extension. Makes it easier to work with Jupyter notebooks, including providing easy option to convert notebooks to scripts (or PDFs or htmls). Open the extensions tab (via the icon on the panel on the left or press `Ctrl/Command + Shift + X`). Search for "Jupyter" and install it.
+- Open the notebook (`.ipynb`) file you want to run as a job. At the top, under the file tabs, it says "+ Code + Markdown | Outline ...". Click on the `...` > `Export` > `Python Script`. Save the python script.
+- Don't forget to add the python script to your github repo - use the VSC github extension to add, commit and push the `.py` file!
 
 Have a look at the python (`.py`) file - how is it different to the notebook? Why would these differences be needed in order to submit the code as a job on an HPC?
 
