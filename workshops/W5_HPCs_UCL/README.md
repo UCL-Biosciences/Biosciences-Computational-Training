@@ -78,21 +78,15 @@ python /path/to/your_script.py # remember to change the path
 
 Save and close the file and submit it: `pwd && qsub /path/to/script.sh`. Some things to check on its progress:
 - `qstat` tells you the status of all your jobs, including their unique job IDs
-- You can use the job ID to find its output. By default it will be `test-python.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job. The command `pwd && qsub /path/to/script.sh` prints the working directory before submitting so you know where the output will be!
+- You can use the job ID to find its output. By default it will be `test-python.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
 
 Finally, download the output and check it on your local computer. You can download it in Visual Studio Code by right-clicking on a file and selecting `Download` - simples!
 
-## Wrap-up
-To finish, let's trace your project all the way through, because the weeks were really one story:
+## Summary
+That's a lot of content! We talked about when and why we use HPCs. We set up HPC access via VSC, including cloning the github repo and copying data to the cluster. We made an environment that we can use to run code then submitted our python script as a job, before downloading the results back to our computer to review, share with colleagues etc.
 
-Week 1 — Coding: you took raw data in, wrangled it, made a figure, and saved your results — a working analysis.
-Week 2 — Version control & collaboration: you tracked your changes and shared your work, turning a file on your laptop into a repository others can see and build on.
-Week 3 — Reproducibility: you made it something anyone can rerun — an environment they can rebuild, data looked after in RDSS, a project someone else could actually pick up.
-Week 4 — Scaling up: you took that same project onto a cluster and ran it at a scale your laptop couldn't manage.
 
-Each week solved a problem the week before created. Code needs versioning; versioned code needs a reproducible environment; a reproducible environment is what lets your work run somewhere bigger. You leave with a template project that holds all of it.
 
-Please complete post-training survey! Link to be added.
 
 
 
