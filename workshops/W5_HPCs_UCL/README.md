@@ -57,17 +57,20 @@ First, convert the notebook to a python file:
 
 Have a look at the python (`.py`) file - how is it different to the notebook? Why would these differences be needed in order to submit the code as a job on an HPC?
 
+File paths will be different on the HPC. Go through the python script and make sure the file paths are correct. We do this in the terminal using `pwd`, `ls` and `cd`. 
+
 To run the python script (`.py`) from within the job script (`.sh`), we add this to your job script. Open the file in Visual Studio Code or use `nano /path/to/script.sh` from the command line:
+
+**CS TO DO: add job script example**
+
 
 ```
 #!/bin/bash -l
 #$ -N test-python
 ## load modules
 
-[ TO ADD: module load conda ] 
 
 ## activate your environment
-conda activate carpentries
 
 ## run the code
 python /path/to/your_script.py # remember to change the path
