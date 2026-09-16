@@ -29,7 +29,16 @@ LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/bin:$LD_LIBRARY_PATH
 ## make an environment using venv
 We will use venv to create an environment that matches the one we set up locally:
 
-**CS TO DO: add preferred venv instructions**
+```
+#venv creation - Only do this once!
+# Will add after testing on cluster
+```
+
+```
+#venv loading - Do this at the start of each script!
+# Will add after testing on cluster
+```
+
 
 ```
 # load conda
