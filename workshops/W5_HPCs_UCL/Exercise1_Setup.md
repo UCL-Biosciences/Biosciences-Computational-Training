@@ -20,6 +20,11 @@ Why wouldn't we just copy over the relevant files??
 We will discuss how programmes are setup on HPCs via path
 
 **CS TO ADD: instructions for loading programmes by adding them to $PATH**
+```
+PATH=/share/apps/python3.10.0-sharedplus/bin:$PATH
+LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/bin:$LD_LIBRARY_PATH
+```
+
 
 ## make an environment using venv
 We will use venv to create an environment that matches the one we set up locally:
