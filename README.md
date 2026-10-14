@@ -25,8 +25,16 @@ Shared synthetic datasets are in [`data/`](data/). Classes will focus on a naked
  
 Install instructions and the conda environment file are in [`setup/`](setup/). Please complete setup before Week 1 — it is much easier to fix problems before the session than during it.
 
-## Key info
-Full info is avialble on the [training website](https://ucl-biosciences.github.io/2025-11-03-Biosciences/).
+## Session info
+Topic | Date | Start Time | Finish Time
+-- | -- | -- | --
+Python | 11 November 2026 | 1:00 pm | 4:30 pm
+Git | 18 November 2026 | 1:00 pm | 4:00 pm
+Managing comp projects | 25 November 2026 | 1:00 pm | 4:00 pm
+AI | 02 December 2026 | 1:00 pm | 4:00 pm
+HPC | 09 December 2026 | 1:00 pm | 4:00 pm
+
+All sessions will be in **G15 in the DMS Watson Building**
 
 ## Training material
 Training material for each workshop is in [`workshops`](https://github.com/UCL-Biosciences/2025_Computational_Training_Material/tree/main/workshops), including teaching notes, code and data.
