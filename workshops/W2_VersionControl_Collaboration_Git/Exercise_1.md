@@ -16,8 +16,8 @@ To do this, we will use **Visual Studio Code**. This is a handy platform that al
 3. In the top bar (File, Edit etc), click on `Terminal` > `New Terminal`. Then, a fiddly bit. This terminal session must be bash (or git bash). In Windows, the default terminal is often powershell. To open a bash terminal, click on the little downwards arrow which is in the top right of the terminal window, next to where it says powershell. If it says bash or git bash already, you can go to the next section.
 4. Finally, we set up a couple of things in our git account. This just ensures any changes we make are linked to our github account - use the same email you signed up to git with:
 ```
-git config --global user.name "Your Name"
-git config --global user.email "your.@email.com"
+git config --global user.name "Your github Username"
+git config --global user.email "your.email@email.com"
 ```
 
 `git config --list` will show you that the details you have entered are OK.
