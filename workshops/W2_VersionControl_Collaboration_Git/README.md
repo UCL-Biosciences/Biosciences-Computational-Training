@@ -1,5 +1,5 @@
 # Week 2 - Git and Github: Reproducibility, Version Control and Collaboration
-Last week we saw how code can make our work efficient, robust and repeatable. This week we will look at how we can extend reproducible practice to address a range of common problems, most importantly improving our "computational health and wellbeing". We will look at why we should care about version control and collaborative practice, and how git and github can support that.
+Last week we saw how code can make our work efficient, robust and repeatable. This week we will look at how we can benefit from good practice in version control and collaboration using git and github.
 
 ## Learning Objectives
 Participants will be able to:
