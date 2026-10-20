@@ -75,4 +75,5 @@ We want our work to be transparent and understandable so people can use it (and 
 Using the last menti poll, choose which example from today you're most likely to implement in your work — write the README, snapshot the environment, move data to RDSS, tag a release, or something else entirely. [Link]
 
 ## What's next
-You now have a version-controlled, reproducible, documented, and citable project. Next week, we take it to UCL's HPC cluster — you'll clone this exact repo, rebuild the environment you just captured, and run the analysis as a proper job on someone else's machine. If today's work holds up, it should be a doddle! Let's see!
+You now have a version-controlled, reproducible, documented, and citable project. Next week, we take a detour to ask what all of this means in the midst of the AI revolution!
+
