@@ -65,9 +65,12 @@ Here's the "who does this help?" table, built from what came up in the room toda
 |---|---|---|---|
 | Clear project structure | | | |
 | Appropriate data storage plan | | | |
-| Environment management (conda) | | | |
+| Environment management (venv) | | | |
 | Documentation, metadata, file naming | | | |
 | Persistent IDs (ORCID, Zenodo DOI) | | | |
+
+### What problems have we covered today?
+The end of the rerun test asks everyone to make a note of anything that stopped them reproducing a previous project. Let us know the issues you found and we can discuss whether we have discussed solutions today - menti link**[ADD MENTI LINK]**.
 
 ### FAIR-enough, not FAIR-perfect
 We want our work to be transparent and understandable so people can use it (and ideally earn us a few more citations). Nobody's project is perfectly FAIR but we should all be thinking about what is FAIR-enough for each project we work on.
