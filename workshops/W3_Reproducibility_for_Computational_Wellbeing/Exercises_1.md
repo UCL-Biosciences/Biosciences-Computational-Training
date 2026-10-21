@@ -108,12 +108,14 @@ While we are still working on research data, we need somewhere to store it. This
 RDSS for most research data but there are lots of options. Some more info [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/data_storage_at_UCL.md). In particular, sensitive data must not be on RDSS! See TRE for more info.
 
 ## Publishing data
-Published data should be FAIR. Increases probability someone else will use it which increases your citation count while also making best use of the data.
+Published data should be FAIR. It increases the probability someone else will use it, which increases your citation count while also making best use of the data.
 
 The best solution is to publish them in domain-specific archives e.g. ncbi, [bioimage archive](https://www.ebi.ac.uk/bioimage-archive/) etc. General-purpose repositories are also good if there is not an appropriate specific option, plus UCL has a Research Data Repository where datasets can be published and are discoverable by unique DOIs - more citations!
 
 ## Metadata
 Research data can be unusable if it doesn't have metadata. At the very least, you need sample metadata to link research data to sample characteristics. This should be enough to reproduce your results. There are domain-specific standards that recommend what we should include.
+
+
 
 **Menti check**: who does appropriate data storage actually help? [Link]
 
