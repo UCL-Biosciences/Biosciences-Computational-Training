@@ -13,7 +13,7 @@ The [general course introduction](workshops/W1_intro_python/Course_Intro.md), wh
 |---|---|---|
 | 1 | [Intro to Python](workshops/W1_intro_python/) | An intro to coding in python and how this supports efficient and reproducible work. Jupyter Lab, Python fundamentals, reading and wrangling data, plotting, saving results. |
 | 2 | [Version Control and Collaboration with Git](workshops/W2_VersionControl_Collaboration_Git/) | We will discuss the benefits of good systems for version control and collaboration, including using git and github for tracking files and working on shared files with a partner |
-| 3 | [Reproducibility and Project Management](workshops/W3_Reproducibility_for_Computational_Wellbeing/) | Explore other aspects of reproducibility and project management, and why they primarily help us as researchers as well as promoting open and reproducible science. Built into a tour of UCL services for data management. Project structure, what to track with version control, conda environments, READMEs, data storage and sharing options at UCL, and publishing a citable Zenodo DOI |
+| 3 | [Reproducibility and Project Management](workshops/W3_Reproducibility_for_Computational_Wellbeing/) | Explore other aspects of reproducibility and project management, and why they primarily help us as researchers as well as promoting open and reproducible science. Built into a tour of UCL services for data management. Project structure, what to track with version control, software environments, READMEs, data storage and sharing options at UCL, and publishing a citable Zenodo DOI |
 | 4 | [AI: LLMs and Machine Learning](workshops/W4_AI_LLMs_ML/) | What AI, ML and LLMs are; a practical ML workflow on your own data; using LLMs effectively, validating their outputs, and using them reproducibly |
 | 5 | [High Performance Computing at UCL](workshops/W5_HPCs_UCL/) | We will discuss the benefits of using high performance computers analyse big data. Options at UCL, when to use them, logging in, moving code and data onto the cluster, rebuilding your environment, and submitting a job.
  
@@ -23,7 +23,7 @@ Shared synthetic datasets are in [`data/`](data/). Classes will focus on a naked
  
 ### Setup
  
-Install instructions and the conda environment file are in [`setup/`](setup/). Please complete setup before Week 1 — it is much easier to fix problems before the session than during it.
+Install instructions and the environment file are in [`setup/`](setup/). Please complete setup before Week 1 — it is much easier to fix problems before the session than during it.
 
 ## Session info
 Topic | Date | Start Time | Finish Time
