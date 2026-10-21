@@ -6,7 +6,7 @@ Most projects require a set of code libraries in order to run, which means a pro
 Fixing this means writing down exactly what your environment looked like when everything originally worked.
 
 ### Venv environments
-Venv is a system for managing python packages using environments. It has a big archive of packages that you can search for and download. It is also an environment manager. You can use it to make separate project workspaces called "environments". Using separate environments means you can have different versions of packages for different projects. This is surprisingly important when working with python libraries.
+Venv is a system for managing python packages using environments. It can install packages from a big archive and is also an environment manager. You can use it to make separate project workspaces called "environments". Using separate environments means you can have different versions of packages for different projects. This is surprisingly important when working with python libraries.
 
 So, venv is for 1. installing packages and 2. managing reproducible environments.
 
