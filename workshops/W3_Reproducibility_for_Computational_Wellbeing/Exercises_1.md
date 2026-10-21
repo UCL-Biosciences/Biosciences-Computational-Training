@@ -34,8 +34,9 @@ Look at your folder from the first two weeks. Where does it diverge from this? M
 ### Project Structure
 File and folder organisation is the big brother of file naming:
 
-<img width="1498" height="936" alt="image" src="https://github.com/user-attachments/assets/a0f7dc8e-c562-480a-a23f-81de0fe5a6de" />
-(From jeanbaptisteparis on flickr)
+<img width="1440" height="900" alt="724619122_e634531f5f_o" src="https://github.com/user-attachments/assets/f6b9dd3e-62c5-4002-8f08-ca2054a7ec73" />
+
+(From jeanbaptisteparis [on flickr](https://www.flickr.com/photos/jeanbaptisteparis/724619122/) )
 
 A standardised project would be more suitable, something like this:
 
