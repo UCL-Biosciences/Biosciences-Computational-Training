@@ -81,7 +81,7 @@ Today, we will use the _Zenodo sandbox_, which is just used for testing - DOIs a
 7. Go back to the [Zenodo sandbox page](https://sandbox.zenodo.org/account/settings/github/), where you will see a (fake) DOI badge has been created for this repo. You can click on the badge, copy the markdown text and paste it into your repo's README.md, which will create a really cool shiny blue DOI badge. Hooray.
 8. You can finally go back to your records on Zenodo sandbox (click on `My dashboard`), where you will find the published record and can edit details to increase its FAIRness.
 
-This record is now saved, citable and searchable. Google searches (although not scholar) look through Zenodo so your work could show up in relevant searches. Better than being buried in a supplementary file!
+This record is now saved, citable and searchable. Google searches (although not scholar) look through Zenodo so your work could show up in relevant searches. Better than being buried in a supplementary file! And it can be cited (more citations!), will persist even if Github or other sites disappear, and meets many funder and journal requirements for sharing outputs.
 
 ## Publishing real datasets
 If your project has a real dataset that should live somewhere more permanent than Zenodo's storage (large data, sensitive data, or data with a natural disciplinary home), have a quick look at [fairsharing.org](https://fairsharing.org) or [re3data.org](https://re3data.org) to see where it would actually belong — you don't need to upload anywhere today, just get a sense of what exists.
