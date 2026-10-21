@@ -37,12 +37,19 @@ The questions (mostly in case menti doesn't work):
 - What are the biggest challenges you've faced when trying to redo an analysis or reproduce some results?
 
 ### Discuss responses
-Chances are, almost everyone in the room has a story for at least one of these. Lack of reproducibility isn't a rare edge case and it affects us in many ways:
+Chances are, almost everyone in the room has a story for at least one of these. 
+
+
+Lack of reproducibility isn't a rare edge case and it affects us in many ways:
 - **Yourself** — you lose time re-figuring-out your own past work, and don't have total confidence in the results.
 - **Your collaborators/colleagues** — they can't run what you sent them so repeat the exercise and redo it themselves.
 - **The wider scientific community** — code that doesn't run can't be used by others. Results that aren't reproducible have limited scientific value.
 
-Today is about closing that gap with some practical steps that will make it easier to manage a complicated project.
+These problems are widespread because data management and reproducibility are undervalued. They take time, rarely earn credit, and are often left until the end of a project, if they happen at all. The result is work that is hard to reproduce, data and code that are rarely reused, and fewer citations for the people who produced them.
+
+Today is about closing that gap with some practical steps that will make it easier to manage a complicated project. In doing so, we will cover two key concepts.
+
+**Reproducibility** means that you, or anyone else, can take the same data and code and get the same results again. **FAIR** is a set of principles for making research outputs Findable, Accessible, Interoperable and Reusable, so data, code and other outputs can be found, used and cited. The biggest beneficiary of both is future-you: the person who has to reopen this project in six months, answer a reviewer, or pick the work up on a new laptop. The things we cover today should always help you first and make your life less stressful, supporting collaborators and the wider community as a happy bonus.
 
 ### Today's project
 You have two options for today, and either is fine:
