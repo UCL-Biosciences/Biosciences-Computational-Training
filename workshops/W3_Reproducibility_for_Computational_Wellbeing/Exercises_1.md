@@ -40,9 +40,18 @@ Read through this [guide](https://datamanagement.hms.harvard.edu/plan-design/fil
 ### Activity
 1. Look at your folder from the first two weeks. Where does it diverge from this? Make a note 
 2. Reorganise it — move files into `data/raw`, `data/processed`, `scripts/`, `results/` as appropriate.
-3. Commit the reorganisation with a clear commit message (e.g. `restructure: separate raw/processed/results`).
+3. Commit the reorganisation with a clear commit message (e.g. `restructure: separate raw/processed/results`) and push it to the "remote" online github. 
 
 If you finish this, look at a real project you are working on. How could the organisation be improved?
+
+**Using a standard project structure.**  Using a standard project structure is easier and more reliable than starting a new structure every time you start a project. Here is how you can do it:
+1. Download [this example project structure](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W3_Reproducibility_for_Computational_Wellbeing/project-structure.zip) and extract all the contents.
+2. Make sure your local and remote repos are synchronised by committing and synchronising in Visual Studio Code (instructions [here](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W2_VersionControl_Collaboration_Git/Exercise_1.md#adding-files-to-the-repo-20-mins)).
+3. Add the project structure to the **online repository, not through VSC**. To do this, open the github page for the repo, click on the + button next to the big green `<> Code` button, and drag and drop the files/folders in the "project-name" folder. Note, this means not the project-name folder itself, but go into project-name, select everything, then drag and drop.
+
+This will integrate the project structure into your current setup without overwriting anything. I tried it and it worked anyway! If there are any problems, you can always return to previous states of the repo, which is one of git's big strengths.
+
+On the other hand, I tried to copy the project structure into a folder that already contained a data and code folder, and it overwrote everything. Silly VSC, clever github!
 
 **Menti check**: who does a clear structure actually help? [Link]
 
