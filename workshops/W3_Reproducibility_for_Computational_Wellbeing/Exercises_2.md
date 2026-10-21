@@ -62,22 +62,26 @@ Keep it short (takes 1-2 minutes to read).
 ## Publishing your project (25 mins)
 All of this work is building towards an Open Science project. Making things publicly available, easy to understand and FAIR means that 1. your work will be found and appreciated and 2. your results will be more reproducible.
 
-An important part of this is making your project findable and citable. Now we will practice doing that with Zenodo
+An important part of this is making your project findable and citable. Now we will practice doing that with Zenodo. Zenodo is a free, open repository that archives outputs and gives them a permanent, citable DOI. This means your work can be found, credited and cited even if the GitHub repo (or other original host of the data) changes or disappears.
+
+Today, we will use the _Zenodo sandbox_, which is just used for testing - DOIs are not real and will not represent a real record of anything.
 
 **Publish a citable version of your project:**
 1. Make sure your README and environment file are all committed and pushed.
-2. If you don't already have one, create an [ORCID](https://orcid.org) — most of you should have this already from the pre-session setup.
+2. Make sure your repository is public. Go to the repo on github > Settings > General > Danger Zone > `Change visibility`.
+3. Log in to [Zenodo sandbox](https://sandbox.zenodo.org/) **with your github**. This means we can make Zenodo records directly from github repos.
+4. Click on the drop-down menu in the top right >  Github > `Sync now` button. Scroll down to the bottom where you should see all the public repos from your github, and move the button to the `ON` position for your training repo.
+5. Go to GitHub and [create a release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Zenodo will automatically download a .zip-ball of each new release and register a DOI:
+  - Go the repo on github and find the Releases section (below About on the right-hand side of the page)
+  - Click on `Create a new release`
+  - On the "New release" page, click on `Tag: Select tag` and create a new tag (name it what you like).
+  - Add a "Release title" and a description.
+  - Click on `Publish release`, green button at the bottom.
+6. The above will create a "tagged" "release" of your repo. Tags are ways of identifying specific versions of the repo. This could be "Submission 1" so you know exactly which version of code was submitted with a paper or "Version 1" for software. Releases are similar, but they also compile compressed files that contain everything in the repo when the release was published. This is what ends up on Zenodo. So a tag points to a certain commit, a release makes it easy to access a certain state.
+7. Go back to the [Zenodo sandbox page](https://sandbox.zenodo.org/account/settings/github/), where you will see a (fake) DOI badge has been created for this repo. You can click on the badge, copy the markdown text and paste it into your repo's README.md, which will create a really cool shiny blue DOI badge. Hooray.
+8. You can finally go back to your records on Zenodo sandbox (click on `My dashboard`), where you will find the published record and can edit details to increase its FAIRness.
 
-**REPLACE THIS WITH ZENODO TESTBED**
-4. Go to [zenodo.org](https://zenodo.org) and link your GitHub account (a quick one-minute authorisation, not a full separate signup).
-5. Find your repo in the Zenodo GitHub integration and switch it on.
-
-**Before you publish**: this is a real, public, permanent-ish record. Zenodo does let you delete a record within 30 days of publishing — but the DOI itself gets indexed straight away, so "deleted" doesn't undo the fact that it existed and was citable. That's not a reason to panic, it's exactly the kind of decision you'll be making with real research outputs — publishing a DOI is a commitment, even with a nominal undo button.
-  
-5. Back on GitHub, create a new Release and tag it (e.g. `v1.0`) by clicking the tag symbol, to the left of `main` and the branches icon. This triggers Zenodo to archive it and mint a DOI.
-6. Copy the DOI badge markdown Zenodo gives you and add it to the top of your README.
-
-______
+This record is now saved, citable and searchable. Google searches (although not scholar) look through Zenodo so your work could show up in relevant searches. Better than being buried in a supplementary file!
 
 ## Publishing real datasets
 If your project has a real dataset that should live somewhere more permanent than Zenodo's storage (large data, sensitive data, or data with a natural disciplinary home), have a quick look at [fairsharing.org](https://fairsharing.org) or [re3data.org](https://re3data.org) to see where it would actually belong — you don't need to upload anywhere today, just get a sense of what exists.
