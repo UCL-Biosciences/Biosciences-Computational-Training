@@ -20,38 +20,49 @@ Some common culprits:
 Make a note of something that broke. At the end of the session, we'll look at everyone's problems and see if we have addressed any of them.
 
 ## Project rescue (25 mins)
-### Folder Structure
-A predictable structure means you (or anyone else) can open an unfamiliar repo and know where to look, without reading every file. Having a consistent and standardised system is more important than the details of the system. A reasonable minimum that can be adapted to your needs and those of your collaborators:
-
-```
-project/
-├── data/
-│   ├── raw/          # never edited, never overwritten - read only
-│   └── processed/     # regenerated from raw + scripts, safe to delete
-├── scripts/           # or notebooks/ - the actual analysis
-├── results/           # figures, tables - regenerated, safe to delete
-├── requirements.txt    # more on this after the break
-└── README.md          # more on this later too
-```
+Here we discuss how naming conventions and project organisation help rescue disorganised projects.
 
 ### File Naming
+File naming is the cause of a lot of confusion. E.g. see this image from [phdcomics.com](https://phdcomics.com/comics/archive.php?comicid=1323) (copyright Jorge Cham):
+
+<img width="600" height="484" alt="image" src="https://github.com/user-attachments/assets/cf9b7761-47c7-4259-a0de-898dc043802e" />
+
 Read through this [guide](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions) for file naming - think about what would be important for you. Which of these is something you have not thought about before?
 
-### Activity
-1. Look at your folder from the first two weeks. Where does it diverge from this? Make a note 
-2. Reorganise it — move files into `data/raw`, `data/processed`, `scripts/`, `results/` as appropriate.
-3. Commit the reorganisation with a clear commit message (e.g. `restructure: separate raw/processed/results`) and push it to the "remote" online github. 
+Look at your folder from the first two weeks. Where does it diverge from this? Make a note
 
-If you finish this, look at a real project you are working on. How could the organisation be improved?
+### Project Structure
+File and folder organisation is the big brother of file naming:
 
-**Using a standard project structure.**  Using a standard project structure is easier and more reliable than starting a new structure every time you start a project. Here is how you can do it:
+<img width="1498" height="936" alt="image" src="https://github.com/user-attachments/assets/a0f7dc8e-c562-480a-a23f-81de0fe5a6de" />
+(From jeanbaptisteparis on flickr)
+
+A standardised project would be more suitable, something like this:
+
+```
+project-name/
+├── README.md
+├── .gitignore        # including data, so large files don't get pushed to GitHub
+├── data/             # original data should live elsewhere, in shared backed-up storage — but you may want local copies to work on
+│   ├── raw/          # if real raw data, must be read-only, never edited
+│   └── processed/    # generated, disposable
+├── code/             # scripts, in run order or numbered
+├── results/          # figures, tables — generated, disposable
+├── docs/             # protocols, notes, decisions
+└── env/              # renv.lock, environment.yml, requirements.txt
+```
+
+Using a standard project structure is easier and more reliable than starting a new structure every time you start a project. Here is how you can do it:
 1. Download [this example project structure](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W3_Reproducibility_for_Computational_Wellbeing/project-structure.zip) and extract all the contents.
 2. Make sure your local and remote repos are synchronised by committing and synchronising in Visual Studio Code (instructions [here](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W2_VersionControl_Collaboration_Git/Exercise_1.md#adding-files-to-the-repo-20-mins)).
-3. Add the project structure to the **online repository, not through VSC**. To do this, open the github page for the repo, click on the + button next to the big green `<> Code` button, and drag and drop the files/folders in the "project-name" folder. Note, this means not the project-name folder itself, but go into project-name, select everything, then drag and drop.
+3. Add the project structure to the **online repository, not through VSC**. To do this, open the github page for the repo, click on the `+` button next to the big green `<> Code` button, and drag and drop the files/folders in the "project-name" folder. Note, this means not the project-name folder itself, but go into project-name, select everything, then drag and drop.
 
 This will integrate the project structure into your current setup without overwriting anything. I tried it and it worked anyway! If there are any problems, you can always return to previous states of the repo, which is one of git's big strengths.
 
 On the other hand, I tried to copy the project structure into a folder that already contained a data and code folder, and it overwrote everything. Silly VSC, clever github!
+
+If you finish this, look at a real project you are working on. How could the organisation be improved? Would this help you organise your work?
+
 
 **Menti check**: who does a clear structure actually help? [Link]
 
