@@ -83,6 +83,8 @@ Today, we will use the _Zenodo sandbox_, which is just used for testing - DOIs a
 
 This record is now saved, citable and searchable. Google searches (although not scholar) look through Zenodo so your work could show up in relevant searches. Better than being buried in a supplementary file! And it can be cited (more citations!), will persist even if Github or other sites disappear, and meets many funder and journal requirements for sharing outputs.
 
+We have simulated a code example today, but this also applies to many outputs: protocols, talks, training, datasets, whitepapers. Anything that you want to publish a record of!
+
 ## Publishing real datasets
 If your project has a real dataset that should live somewhere more permanent than Zenodo's storage (large data, sensitive data, or data with a natural disciplinary home), have a quick look at [fairsharing.org](https://fairsharing.org) or [re3data.org](https://re3data.org) to see where it would actually belong — you don't need to upload anywhere today, just get a sense of what exists.
 
