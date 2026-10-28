@@ -1,7 +1,7 @@
 ## UCL Computer Science Cluster 
-The Computer Science Department at UCL runs its own in-house HPC facility providing high performance compute, GPU and storage capability, and technical expertise to the department, the wider UCL community, and beyond.
+The Computer Science Department at UCL runs an in-house HPC facility providing high performance compute, GPU and storage capability, and technical expertise to the wider UCL community and beyond.
 
-This service runs within the Computer Science Technical Support Group (TSG), which has a comprehensive team with a wealth of experience going back several decades. In addition to expertise in high performance computing, the HPC cluster team also has scientific domain expertise, in areas spanning such as Astrophysics and Bioinformatics. We are here to help you make the most of the HPC facilities. We offer training in HPC as well as technical support. The CS cluster is funded by it users through research grant income.
+The HPC Cluster team provides a wealth of experience going back several decades, with expertise in various scientific domains, such as Astrophysics, Bioinformatics, Machine Learning Optimisation, and Electrical Engineering. In addition to offering efficient infrastructure, we offer regular HPC training and dynamic technical support. The CS cluster is funded by it users through research grant income.
 
 With over 1000 compute nodes, 300k+ GPU cores, 10+ PB of disk, and 10PB of tape capacity we provide a mid-sized, efficient, and focused HPC and storage service.
 
@@ -11,7 +11,7 @@ With over 1000 compute nodes, 300k+ GPU cores, 10+ PB of disk, and 10PB of tape 
 ## Visual Studio Code Setup
 VSC can log in to HPCs, allowing you to browse files, edit code and run commands within the interface. This provides an alternative to connecting to the cluster through a terminal session, and subsequently editing files with text editors such as nano and vi.
 
-To set-up VSC with the 
+To set-up VSC with the CS cluster,  
 
 ## Logging in and setting up a directory
 First, we will log in following these [instructions](https://github-pages.arc.ucl.ac.uk/hpc-intro/11-connecting/index.html) and [have a look around](https://github-pages.arc.ucl.ac.uk/hpc-intro/12-cluster/index.html). Make a project folder and move to it:
