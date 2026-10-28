@@ -1,7 +1,17 @@
-## Visual Studio Code Setup
-VSC can log in to HPCs, allowing you to browse files, edit code and run commands within the nice interface. It is a good solution and avoids some problems like using more awkward text-editors (e.g. nano and vim) and moving files between the HPC and your machine.
+## UCL Computer Science Cluster 
+The Computer Science Department at UCL runs its own in-house HPC facility providing high performance compute, GPU and storage capability, and technical expertise to the department, the wider UCL community, and beyond.
 
-**CS TO DO: add some steps for setting up VSC HPC login - most people will be using new versions of VSC that will need a workaround for the glib library incompatibility issue**
+This service runs within the Computer Science Technical Support Group (TSG), which has a comprehensive team with a wealth of experience going back several decades. In addition to expertise in high performance computing, the HPC cluster team also has scientific domain expertise, in areas spanning such as Astrophysics and Bioinformatics. We are here to help you make the most of the HPC facilities. We offer training in HPC as well as technical support. The CS cluster is funded by it users through research grant income.
+
+With over 1000 compute nodes, 300k+ GPU cores, 10+ PB of disk, and 10PB of tape capacity we provide a mid-sized, efficient, and focused HPC and storage service.
+
+<img width="750" height="111" alt="image" src="https://github.com/user-attachments/assets/6f48dcbc-44f5-4c76-b716-49eab842ac4e" />
+
+
+## Visual Studio Code Setup
+VSC can log in to HPCs, allowing you to browse files, edit code and run commands within the interface. This provides an alternative to connecting to the cluster through a terminal session, and subsequently editing files with text editors such as nano and vi.
+
+To set-up VSC with the 
 
 ## Logging in and setting up a directory
 First, we will log in following these [instructions](https://github-pages.arc.ucl.ac.uk/hpc-intro/11-connecting/index.html) and [have a look around](https://github-pages.arc.ucl.ac.uk/hpc-intro/12-cluster/index.html). Make a project folder and move to it:
