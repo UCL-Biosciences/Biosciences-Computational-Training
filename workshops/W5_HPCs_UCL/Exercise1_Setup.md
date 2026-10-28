@@ -73,33 +73,52 @@ Then clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remem
 Why wouldn't we just copy over the relevant files??
 
 ## Load shared software 
-- CS Cluster offers a wealth of software, which can be found in /share/apps including:
--   Common programming languages, eg. Python and R
--   Specialized software, eg. Nextflow, and a directory of other tools in /share/apps/genomics
+- CS Cluster offers a wealth of software, which can be found in /share/apps
+- This also includes specialized software for bioinformatics, which can be found in /share/apps/genomics
 
-To use a software, two commands are required, which sets your PATH and LD_LIBRARY_PATH variable.
-- PATH =
-- LD_LIBRARY_PATH=
+To use installed software, you need to configure two Linux environment variables: **PATH** and **LD_LIBRARY_PATH**.
 
-In this example, we are loading version 3.10.0 of Python:
+- **PATH**: Tells Linux where to look for executable programs when you type a command. By adding a software installation's binary (bin) directory to PATH, you can run its commands without specifying their full file paths.
+
+- **LD_LIBRARY_PATH**: Tells the dynamic linker where to look for shared libraries (.so files) required by a program when it starts. In other words, some software depends on libraries installed outside the standard system directories, so their locations must be specified.
+  
+Below is an example of loading Python version 3.10.0:
 
 ```
 PATH=/share/apps/python3.10.0-sharedplus/bin:$PATH
-LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/bin:$LD_LIBRARY_PATH
+LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/lib:$LD_LIBRARY_PATH
 ```
 
 
 ## Setting up Python environments with venv
-venv provides a lightweight which can be used across a large amount of infrastructure sustainably. Other offerings such as conda, are problematic due to _, our aim is to keep operations as efficient as possible, to ensure everyone is using an efficient HPC ecosystem!
+We recommend using Python's built-in venv functionality to create lightweight, isolated environments for your projects. These environments are straightforward to manage and help minimise unnecessary overhead on shared HPC infrastructure.
 
+Alternative environment managers, such as Conda, can introduce additional challenges in an HPC environment, particularly due to their storage requirements, large numbers of small files, and filesystem metadata operations. When used extensively across many users, these can place additional pressure on shared storage systems and affect overall performance.
+
+### Setting up a venv
 ```
-#venv creation - Only do this once!
-# Will add after testing on cluster
+# When downloading packages, run a more recent GCC toolchain to support compilation
+scl enable devtoolset-11 bash
+# Load the version of Python you wish to use
+PATH=/share/apps/python3.10.0-sharedplus/bin:$PATH
+LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/lib:$LD_LIBRARY_PATH
+# Create the venv
+python3 -m venv moleRatvenv
+# Activate this new venv
+source moleRatvenv/bin/activate
+# Within the venv, use pip to install required packaes
+pip install numpy
+pip install matplotlib
+# Once finished, get out of the venv
+deactivate
 ```
 
+### Running a pre-existing venv
 ```
-#venv loading - Do this at the start of each script!
-# Will add after testing on cluster
+# Importantly, run this at the start of your script if you wish to use the venv
+PATH=/share/apps/python3.10.0-sharedplus/bin:$PATH
+LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/lib:$LD_LIBRARY_PATH
+source moleRatvenv/bin/activate
 ```
 
 ### Copying input data
@@ -107,8 +126,7 @@ venv provides a lightweight which can be used across a large amount of infrastru
 **Currently discussing datasource. scp?**
 
 ```
-mkdir -p data/input
-cp /PATH/TO/RDSS/PROJECT data/input
+
 ```
 
 Now you should have all the code, libraries and data needed to run your analysis on the HPC!
