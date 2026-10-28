@@ -1,9 +1,10 @@
 ## UCL Computer Science Cluster 
-The Computer Science Department at UCL runs an in-house HPC facility providing high performance compute, GPU and storage capability, and technical expertise to the wider UCL community and beyond.
 
-The HPC Cluster team provides a wealth of experience going back several decades, with expertise in various scientific domains, such as Astrophysics, Bioinformatics, Machine Learning Optimisation, and Electrical Engineering. In addition to offering efficient infrastructure, we offer regular HPC training and dynamic technical support. The CS cluster is funded by it users through research grant income.
+The Department of Computer Science at UCL operates an in-house High-Performance Computing (HPC) and virtualization facility, delivering high-throughput compute, GPU acceleration, dedicated virtual machines (VMs), large-scale storage, and technical expertise to the wider UCL community and external partners.
 
-With over 1000 compute nodes, 300k+ GPU cores, 10+ PB of disk, and 10PB of tape capacity we provide a mid-sized, efficient, and focused HPC and storage service.
+Backed by over 1,000 compute nodes, 100+ GPU accelerators, 10+ PB of disk storage, and deep tape archival capacity, alongside a flexible VM provisioning environment, we deliver an efficient, focused, mid-scale infrastructure service.
+
+Our engineering team brings decades of combined experience across diverse research domains including astrophysics, bioinformatics, machine learning optimisation, and electrical engineering. Alongside infrastructure, we provide regular training programmes and responsive technical support. The facility operates on a cost-recovery model, funded directly by its users through research grants.
 
 <img width="750" height="111" alt="image" src="https://github.com/user-attachments/assets/6f48dcbc-44f5-4c76-b716-49eab842ac4e" />
 
@@ -11,11 +12,22 @@ With over 1000 compute nodes, 300k+ GPU cores, 10+ PB of disk, and 10PB of tape 
 ## Visual Studio Code Setup
 VSC can log in to HPCs, allowing you to browse files, edit code and run commands within the interface. This provides an alternative to connecting to the cluster through a terminal session, and subsequently editing files with text editors such as nano and vi.
 
-To set-up VSC with the CS cluster,  
+Older versions of VSC, specifically 1.9.8 or below can integrate with the cluster through the following [instructions](https://hpc.cs.ucl.ac.uk/software/index.html). it is possible to use more recent versions of VSC, however, this requires further tweaking to your local environment through the following [walkthrough]().
 
-## Logging in and setting up a directory
-First, we will log in following these [instructions](https://github-pages.arc.ucl.ac.uk/hpc-intro/11-connecting/index.html) and [have a look around](https://github-pages.arc.ucl.ac.uk/hpc-intro/12-cluster/index.html). Make a project folder and move to it:
 
+## Logging in
+First, we will log in to the cluster using the [ssh](https://man7.org/linux/man-pages/man1/ssh.1.html) command.
+
+
+## Cluster Architecture
+- Compute nodes, log-in nodes
+- Home directory
+- Project storage directory
+
+
+## Setting up a directory
+
+Make a project folder in your home directory, and move into it:
 ```
 mkdir my_project_dir
 cd my_project_dir
@@ -27,17 +39,24 @@ Then clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remem
 Why wouldn't we just copy over the relevant files??
 
 ## Load shared software 
-We will discuss how programmes are setup on HPCs via path
+- CS Cluster offers a wealth of software, which can be found in /share/apps including:
+-   Common programming languages, eg. Python and R
+-   Specialized software, eg. Nextflow, and a directory of other tools in /share/apps/genomics
 
-**CS TO ADD: instructions for loading programmes by adding them to $PATH ✅**
+To use a software, two commands are required, which sets your PATH and LD_LIBRARY_PATH variable.
+- PATH =
+- LD_LIBRARY_PATH=
+
+In this example, we are loading version 3.10.0 of Python:
+
 ```
 PATH=/share/apps/python3.10.0-sharedplus/bin:$PATH
 LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/bin:$LD_LIBRARY_PATH
 ```
 
 
-## make an environment using venv
-We will use venv to create an environment that matches the one we set up locally:
+## Setting up Python environments with venv
+venv provides a lightweight which can be used across a large amount of infrastructure sustainably. Other offerings such as conda, are problematic due to _, our aim is to keep operations as efficient as possible, to ensure everyone is using an efficient HPC ecosystem!
 
 ```
 #venv creation - Only do this once!
@@ -49,17 +68,9 @@ We will use venv to create an environment that matches the one we set up locally
 # Will add after testing on cluster
 ```
 
+### Copying input data
 
-```
-# load conda
-conda  env create -f path/to/requirements.yml
-conda activate carpentries
-```
-### Copy in some data
-
-**CS TO DO: confirm preference for data. see Issue #6 for more info**
-
-Use the data from the repo OR Find the RDSS file location and copy some data to a data folder:
+**Currently discussing datasource. scp?**
 
 ```
 mkdir -p data/input
