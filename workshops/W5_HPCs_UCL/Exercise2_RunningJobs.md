@@ -6,6 +6,8 @@ First we will have a quick look at HPC nodes and the difference between login an
 
 Then we will look at job scripts, which is how we tell the cluster what we want to do.
 
+## Creating .py script
+
 Now, we will submit the python code we wrote in week 1 as a job.
 First, convert the notebook to a python file:
 - Install the Visual Studio Code Jupyter extension. Makes it easier to work with Jupyter notebooks, including providing easy option to convert notebooks to scripts (or PDFs or htmls). Open the extensions tab (via the icon on the panel on the left or press `Ctrl/Command + Shift + X`). Search for "Jupyter" and install it.
