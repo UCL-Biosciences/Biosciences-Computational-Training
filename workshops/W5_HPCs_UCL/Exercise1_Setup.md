@@ -26,39 +26,6 @@ ssh compSciUsername@knuckles.cs.ucl.ac.uk
 ssh compSciUsername@pchuckle.cs.ucl.ac.uk
 ```
 
-## Cluster Architecture
-A HPC cluster contains three main entities:
-
-### Log-in Node
-The log-in node is the front-end computer through which users access and interact with the HPC cluster. This is where you arrive after connecting via SSH.
-
-As the log-in node is shared by multiple users, only lightweight tasks are permitted. These include:
-
-- Editing and compiling code
-- Transferring data
-- Submitting and monitoring jobs
-
-Computationally intensive tasks should not be run on the log-in node, as they can affect the experience of other users.
-
-### Compute Nodes
-Compute nodes provide the processing power required to execute computationally intensive workloads.
-
-Unlike log-in nodes, compute nodes are not typically accessed directly via SSH. Instead, users request computational resources through the job scheduler, which allocates access to the appropriate compute nodes.
-
-### Job Scheduler
-As compute nodes are shared among multiple users, access to their computational resources must be managed to ensure fair and efficient utilisation.
-
-Rather than running computationally intensive tasks directly, users submit jobs to the scheduler, typically through a **job script** specifying the resources required (e.g., number of CPUs, memory, and execution time).
-
-The scheduler manages the allocation of computational resources across the cluster, considering factors such as resource availability and scheduling policies.
-
-When sufficient resources become available, the scheduler allocates the requested resources and starts the job on the appropriate compute node(s).
-
-If the requested resources are not immediately available, the job remains in a queue until it can be scheduled. Larger resource requests may experience longer waiting times, depending on cluster utilisation and scheduling policies.
-
-<img width="322" height="264" alt="image" src="https://github.com/user-attachments/assets/e4f14f92-6985-46d9-ae2c-be1ad8ce674f" />
-
-
 ## Setting up a directory
 
 Make a project folder in your home directory, and move into it:
