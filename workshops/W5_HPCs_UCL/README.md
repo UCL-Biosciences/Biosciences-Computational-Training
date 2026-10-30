@@ -47,6 +47,16 @@ HPCs address some of these problems:
 
 **Exercise 2 — Submit a job.**  Next we look at how to [run jobs](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W5_HPCs_UCL/Exercise2_RunningJobs.md) on the HPC's powerful computers.
 
+## UCL Computer Science Cluster 
+
+The Department of Computer Science at UCL operates an in-house High-Performance Computing (HPC) and virtualization facility, delivering high-throughput compute, GPU acceleration, dedicated virtual machines (VMs), large-scale storage, and technical expertise to the wider UCL community and external partners.
+
+Backed by over 1,000 compute nodes, 100+ GPU accelerators, 10+ PB of disk storage, and deep tape archival capacity, alongside a flexible VM provisioning environment, we deliver an efficient, focused, mid-scale infrastructure service.
+
+Our engineering team brings decades of combined experience across diverse research domains including astrophysics, bioinformatics, machine learning optimisation, and electrical engineering. Alongside infrastructure, we provide regular training programmes and responsive technical support. The facility operates on a cost-recovery model, funded directly by its users through research grants.
+
+<img width="750" height="111" alt="image" src="https://github.com/user-attachments/assets/6f48dcbc-44f5-4c76-b716-49eab842ac4e" />
+
 ## Summary
 That's a lot of content! We talked about when and why we use HPCs. We set up HPC access via VSC, including cloning the github repo and copying data to the cluster. We made an environment that we can use to run code then submitted our python script as a job, before downloading the results back to our computer to review, share with colleagues etc.
 
