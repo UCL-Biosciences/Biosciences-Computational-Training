@@ -12,7 +12,7 @@ Our engineering team brings decades of combined experience across diverse resear
 ## Visual Studio Code Setup
 VSC can log in to HPCs, allowing you to browse files, edit code and run commands within the interface. This provides an alternative to connecting to the cluster through a terminal session, and subsequently editing files with text editors such as nano and vi.
 
-Older versions of VSC, specifically 1.9.8 or below can integrate with the cluster through the following [instructions](https://hpc.cs.ucl.ac.uk/software/index.html). it is possible to use more recent versions of VSC, however, this requires further tweaking to your local environment through the following [walkthrough]().
+Older versions of VSC, specifically 1.9.8 or below can integrate with the cluster through the following [instructions](https://hpc.cs.ucl.ac.uk/software/index.html). It is possible to use more recent versions of VSC, however this requires further tweaking to your local environment through the following [walkthrough]().
 
 
 ## Logging in
@@ -20,6 +20,8 @@ First, we will log in to the cluster using the [ssh](https://man7.org/linux/man-
 
 ```
 #First, log in to a gateway node to enter the CS network. Remember to use your CS username, rather than your centralized UCL username!
+#knuckles for taught students
+#tails for PhD students or staff
 ssh compSciUsername@knuckles.cs.ucl.ac.uk
 
 #Then, log in to the Biosciences log-in node
