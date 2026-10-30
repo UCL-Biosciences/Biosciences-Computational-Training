@@ -56,8 +56,8 @@ If the requested resources are not immediately available, the job remains in a q
 
 ```
 # MEMORY AND RESOURCES
-#$ -l tmem=152M
-#$ -l h_vmem=152M
+#$ -l tmem=256M
+#$ -l h_vmem=256M
 #$ -l h_rt=00:15:00
 
 # OTHER
@@ -65,7 +65,6 @@ If the requested resources are not immediately available, the job remains in a q
 #$ -j y
 #$ -o logs/
 #$ -N test-python
-#$ -cwd
 #------------
 echo "Running on host: $(hostname)"
 echo "Start time: $(date)"
