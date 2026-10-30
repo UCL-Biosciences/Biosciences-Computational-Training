@@ -2,7 +2,7 @@
 
 The recent versions of VS Code are currently not supported on the CS Cluster's Operating System, only VS Code version 1.98.0 or below would work. 
 
-The simplest solution is to download an older version of VS Code, available at: https://code.visualstudio.com/updates/archive
+**The simplest solution is to download an older version of VS Code, available at: https://code.visualstudio.com/updates/archive**
 
 However, if using the latest version of VS Code is preferred, follow the below instructions:
 
