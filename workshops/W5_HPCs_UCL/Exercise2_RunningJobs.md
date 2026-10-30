@@ -55,18 +55,34 @@ If the requested resources are not immediately available, the job remains in a q
 ## Job Scripts
 
 ```
-#!/bin/bash -l
+# MEMORY AND RESOURCES
+#$ -l tmem=152M
+#$ -l h_vmem=152M
+#$ -l h_rt=00:15:00
+
+# OTHER
+#$ -S /bin/bash
+#$ -j y
+#$ -o logs/
 #$ -N test-python
-## load modules
+#$ -cwd
+#------------
+echo "Running on host: $(hostname)"
+echo "Start time: $(date)"
+echo "Job ID: $JOB_ID"
 
+PATH=/share/apps/python3.10.0-sharedplus/bin:$PATH
+LD_LIBRARY_PATH=/share/apps/python3.10.0-sharedplus/lib:$LD_LIBRARY_PATH
 
-## activate your environment
+source path/to/venv/bin/activate
 
-## run the code
-python /path/to/your_script.py # remember to change the path
+python3 file.py
+
+echo "End Time: $(date)"
+
 ```
 
-Save and close the file and submit it: `pwd && qsub /path/to/script.sh`. Some things to check on its progress:
+Save and close the file and submit it: `qsub /path/to/script.sh`. Some things to check on its progress:
 - `qstat` tells you the status of all your jobs, including their unique job IDs
 - You can use the job ID to find its output. By default it will be `test-python.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
 
