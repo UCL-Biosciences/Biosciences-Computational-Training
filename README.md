@@ -32,7 +32,7 @@ Topic | Date | Start Time | Finish Time
 -- | -- | -- | --
 Python | 11 November 2026 | 1:00 pm | 4:30 pm
 Git | 18 November 2026 | 1:00 pm | 4:00 pm
-Managing comp projects | 25 November 2026 | 1:00 pm | 4:00 pm
+Reproducibility and project management | 23 November 2026 | 1:00 pm | 4:00 pm
 AI | 02 December 2026 | 1:00 pm | 4:00 pm
 HPC | 09 December 2026 | 1:00 pm | 4:00 pm
 
