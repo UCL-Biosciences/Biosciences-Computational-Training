@@ -17,10 +17,11 @@ By the end of this session, participants will be able to:
 | Activity | Time |
 |----------|------|
 | Why HPC? | 15 min |
-| Log in | 20 min |
+| VSC setup and logging in | 20 min |
 | Get your code (github) onto the cluster | 10 min |
 | Break | 10 min |
-| Build your environment | 10 min |
+| Loading software | 15 min |
+| Build your environment | 15 min |
 | Transfer data  | 20 min |
 | Jobs | 45 min |
 | Break | 10 min |
@@ -59,7 +60,6 @@ Our engineering team brings decades of combined experience across diverse resear
 
 ## Summary
 That's a lot of content! We talked about when and why we use HPCs. We set up HPC access via VSC, including cloning the github repo and copying data to the cluster. We made an environment that we can use to run code then submitted our python script as a job, before downloading the results back to our computer to review, share with colleagues etc.
-
 
 
 
