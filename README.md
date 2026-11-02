@@ -6,9 +6,7 @@ All the info is freely available and you can download to your computer by [cloni
 ## The course
 
 The course consists of five three-hour workshops. Each week picks up where the last one left off, using a single project and dataset that you build up across the whole series. Participants will finish the course with a working, version-controlled, reproducible project template.
- 
-The [general course introduction](workshops/W1_intro_python/Course_Intro.md), which covers why these skills matter and the aims for the series.
- 
+  
 | Week | Session | Material |
 |---|---|---|
 | 1 | [Intro to Python](workshops/W1_intro_python/) | An intro to coding in python and how this supports efficient and reproducible work. Jupyter Lab, Python fundamentals, reading and wrangling data, plotting, saving results. |
