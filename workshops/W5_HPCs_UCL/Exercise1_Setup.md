@@ -91,11 +91,9 @@ source moleRatvenv/bin/activate
 ```
 
 ### Copying input data
-
-**Currently discussing datasource. scp?**
-
 ```
-
+#Run this on your LOCAL device
+scp /path/to/your/data jschneid@pchuckle:/home/csUserName/path/you/want
 ```
 
 Now you should have all the code, libraries and data needed to run your analysis on the HPC!
