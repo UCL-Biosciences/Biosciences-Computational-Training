@@ -102,7 +102,7 @@ Write a working `.gitignore` for your project based on this. (GitHub has good st
 While we are still working on research data, we need somewhere to store it. This is where institutional storage comes in — UCL's Research Data Storage Service (RDSS). You should already have access to a training project we set up in advance.
 
 1. Mount the RDSS training project using the guides for [Windows](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service/how-mount-research-data-storage-service-windows) and [Mac](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service/how-mount-research-data-storage-service-mac-os). If that doesn't work, you can try using the file transfer programmes listed for windows and Mac. Ask if you are having problems!
-2. Upload your raw data there instead of committing it to git.
+2. Upload your raw data there
 
 ### Other storage solutions
 RDSS for most research data but there are lots of options. Some more info [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/data_storage_at_UCL.md). In particular, sensitive data must not be on RDSS! See TRE for more info.
