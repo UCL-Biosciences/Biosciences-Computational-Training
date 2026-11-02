@@ -6,27 +6,25 @@ We don't schedule time for troubleshooting setup problems. Please ensure you com
 
 ## 1. Install Python
  
-1. Check whether you already have Python 3.10 or newer. Open a terminal and run `python --version` (on Mac/Linux you may need `python3 --version`).
-2. If not, download it from [python.org/downloads](https://www.python.org/downloads/). **On Windows, tick "Add python.exe to PATH" on the first screen of the installer.**
+Download it from [python.org/downloads](https://www.python.org/downloads/). **On Windows, tick "Add python.exe to PATH" on the first screen of the installer.**
 
 ## 2. Install Git
  
 - **Windows:** install [Git for Windows](https://gitforwindows.org/) and accept the default options. This also installs **Git Bash**, which we use as the terminal.
 - **Mac:** open Terminal and run `git --version`. If git isn't installed, macOS will offer to install it. Accept.
-- **Linux:** `sudo apt install git` (or your distribution's equivalent).
-Check it worked by opening a new terminal and running `git --version`.
  
 ## 3. Install Visual Studio Code
  
-1. Download and install from [code.visualstudio.com](https://code.visualstudio.com/).
+1. For week five, it is better to have an older version of Visual Studio Code that is compatible with the HPC system. Download version 1.98 (or below) from [here](https://code.visualstudio.com/updates/v1_98).
 2. Open it and go to the Extensions tab (`Ctrl/Cmd + Shift + X`). Search for and install:
    - **Python** (Microsoft)
    - **Jupyter** (Microsoft)
-## 4. Create your course folder and environment
+
+## 4. Create your course folder and software environment
  
-An environment is a separate set of Python packages for one project. We will use `venv`, which comes with Python. Name it exactly `carpentries`: in Week 1 you will select the "carpentries" environment as your kernel.
+An environment is a separate set of Python packages for one project - we discuss this in week 3. We will use `venv`, which comes with Python. Name it exactly `carpentries`: in Week 1 you will select the "carpentries" environment as your kernel.
  
-1. In VS Code, choose `File` > `Open Folder`, make a new empty folder called e.g. `biosciences-training`, and open it. **We will keep using this folder throughout the course. In Week 1, open this same folder (`File` > `Open Folder`) and add your `data` and `notebooks` folders to it.**
+1. In VS Code, choose `File` > `Open Folder`, make a new empty folder called e.g. `biosciences-training`, and open it. **We will keep using this folder throughout the course.**
 2. Open a terminal: `Terminal` > `New Terminal`. **On Windows, make sure it is Git Bash**: click the small down arrow next to the `+` at the top right of the terminal panel and choose *Git Bash*. (If it already says bash or git bash, carry on.)
 3. Create the environment (use `python3` instead of `python` on Mac/Linux if `python` isn't found):
 ```
@@ -54,4 +52,4 @@ Sign up at [github.com](https://github.com/) if you don't have an account. Use a
 In Week 2 we will connect VS Code to your account.
 
 ## 6. Apply for an account on the cluster
-In week five, we will get an intro to high performance computing from the Computer Science HPC team. Please complete [this form](https://hpc.cs.ucl.ac.uk/account-form/) to request an account. This needs to be done ahead of week five to give the CS team time to make all your accounts.
+In week five, we will get an intro to high performance computing from the Computer Science HPC team. Please complete [this form](https://hpc.cs.ucl.ac.uk/account-form/) to request an account. This needs to be done ahead of the start of the course to give the CS team time to make all your accounts.
