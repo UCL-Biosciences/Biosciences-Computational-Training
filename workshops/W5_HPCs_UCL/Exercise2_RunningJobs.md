@@ -7,7 +7,7 @@ The great thing about notebooks is that they are interactive and show us the out
 
 We can use the code in our notebooks but must convert it first into a script file. This is a file that contains code that runs one-line-at-a-time and generally saves outputs to file. You can convert notebooks to scripts in VSC but today we will use an script we tested previously so we know it will work on the cluster:
 
-1. Download the script to your local machine from [here](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/jayChanges/workshops/W5_HPCs_UCL/scripts/activity_stats.py)
+1. Download the script to your local machine from [here](/workshops/W5_HPCs_UCL/scripts/activity_stats.py)
 2. Copy it to your git clone on the HPC
 
 Have a look at the python (`.py`) file - how is it different to the notebook? Why would these differences be needed in order to submit the code as a job on an HPC?
@@ -47,6 +47,7 @@ If the requested resources are not immediately available, the job remains in a q
 <img width="322" height="264" alt="image" src="https://github.com/user-attachments/assets/e4f14f92-6985-46d9-ae2c-be1ad8ce674f" />
 
 ## Job Scripts
+We submit jobs using scripts like the one below. You can download this job script [here](/workshops/W5_HPCs_UCL/scripts/submit_job.sh) and transfer it to your project on the HPC like we did with the the `.py` script, above. Once you have sent it to the HPC, make sure to EDIT the file paths so the HPC knows where your files are!
 
 ```
 # MEMORY AND RESOURCES
@@ -78,5 +79,6 @@ echo "End Time: $(date)"
 Save and close the file and submit it: `qsub /path/to/script.sh`. Some things to check on its progress:
 - `qstat` tells you the status of all your jobs, including their unique job IDs
 - You can use the job ID to find its output. By default it will be `test-python.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
+- add, commit and push your scripts to your github repo as we have done previously.
 
 Finally, download the output and check it on your local computer. You can download it in Visual Studio Code by right-clicking on a file and selecting `Download` - simples!
