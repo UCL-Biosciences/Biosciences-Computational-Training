@@ -2,21 +2,15 @@
 
 We use HPCs to run our code on powerful computers. We do this by writing job scripts and submitting them to the HPC queue, which then sends them to the powerful computers.
 
-First we will have a quick look at HPC nodes and the difference between login and compute nodes.
-
-Then we will look at job scripts, which is how we tell the cluster what we want to do.
-
 ## Creating .py script
+The great thing about notebooks is that they are interactive and show us the outputs of our work as we run the code. When submitting jobs to HPCs, we do not run the code interactively and won't view the outputs until the end of the job. Notebooks are therefore not the right type of file to run as jobs on HPCs.
 
-Now, we will submit the python code we wrote in week 1 as a job.
-First, convert the notebook to a python file:
-- Install the Visual Studio Code Jupyter extension. Makes it easier to work with Jupyter notebooks, including providing easy option to convert notebooks to scripts (or PDFs or htmls). Open the extensions tab (via the icon on the panel on the left or press `Ctrl/Command + Shift + X`). Search for "Jupyter" and install it.
-- Open the notebook (`.ipynb`) file you want to run as a job. At the top, under the file tabs, it says "+ Code + Markdown | Outline ...". Click on the `...` > `Export` > `Python Script`. Save the python script.
-- Don't forget to add the python script to your github repo - use the VSC github extension to add, commit and push the `.py` file!
+We can use the code in our notebooks but must convert it first into a script file. This is a file that contains code that runs one-line-at-a-time and generally saves outputs to file. You can convert notebooks to scripts in VSC but today we will use an script we tested previously so we know it will work on the cluster:
+
+1. Download the script to your local machine from [here](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/jayChanges/workshops/W5_HPCs_UCL/scripts/activity_stats.py)
+2. Copy it to your git clone on the HPC
 
 Have a look at the python (`.py`) file - how is it different to the notebook? Why would these differences be needed in order to submit the code as a job on an HPC?
-
-File paths will be different on the HPC. Go through the python script and make sure the file paths are correct. We do this in the terminal using `pwd`, `ls` and `cd`. 
 
 To run the python script (`.py`) from within the job script (`.sh`), we add this to your job script. Open the file in Visual Studio Code or use `nano /path/to/script.sh` from the command line:
 
