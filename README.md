@@ -22,15 +22,13 @@ Please complete [the setup instructions](setup/README.md) **before Week 1 (11 No
 You will need your own laptop (Windows or Mac) with permission to install software. If your laptop is managed by UCL and you can't install software, let us know as soon as possible.
 
 ## Session info
-Topic | Date | Start Time | Finish Time
+Topic | Date | Start Time | Finish Time | Location |
 -- | -- | -- | --
-Python | 11 November 2026 | 1:00 pm | 4:30 pm
-Git | 18 November 2026 | 1:00 pm | 4:00 pm
-Reproducibility and project management | 23 November 2026 | 1:00 pm | 4:00 pm
-AI | 02 December 2026 | 1:00 pm | 4:00 pm
-HPC | 09 December 2026 | 1:00 pm | 4:00 pm
-
-All sessions will be in **G15 in the DMS Watson Building**
+Python | 11 November 2026 | 1:00 pm | 4:30 pm | G15 - Public Cluster in DMS Watson Building |
+Git | 18 November 2026 | 1:00 pm | 4:00 pm | G15 - Public Cluster in DMS Watson Building |
+Reproducibility and project management | 23 November 2026 | 1:00 pm | 4:00 pm | IOE (20) W4.01 |
+AI | 02 December 2026 | 1:00 pm | 4:00 pm | G15 - Public Cluster in DMS Watson Building |
+HPC | 09 December 2026 | 1:00 pm | 4:00 pm | G15 - Public Cluster in DMS Watson Building |
 
 ## Training material
 Training material for each workshop is in [`workshops`](https://github.com/UCL-Biosciences/2025_Computational_Training_Material/tree/main/workshops), including teaching notes, code and data.
