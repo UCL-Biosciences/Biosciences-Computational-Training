@@ -25,7 +25,7 @@ Shared synthetic datasets are in [`data/`](data/). Classes will focus on a naked
  
 Please complete [the setup instructions](setup/README.md) **before Week 1 (11 November)**. It takes about 30 minutes, and it is much easier to fix problems beforehand than during a session. If anything doesn't work, email james.d.gilbert@ucl.ac.uk and we will help.
  
-You will need your own laptop (Windows, Mac or Linux) with permission to install software. If your laptop is managed by UCL and you can't install software, let us know as soon as possible.
+You will need your own laptop (Windows or Mac) with permission to install software. If your laptop is managed by UCL and you can't install software, let us know as soon as possible.
 
 ## Session info
 Topic | Date | Start Time | Finish Time
