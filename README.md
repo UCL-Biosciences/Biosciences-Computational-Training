@@ -23,7 +23,7 @@ You will need your own laptop (Windows or Mac) with permission to install softwa
 
 ## Session info
 Topic | Date | Start Time | Finish Time | Location |
--- | -- | -- | --
+-- | -- | -- | -- | -- |
 Python | 11 November 2026 | 1:00 pm | 4:30 pm | G15 - Public Cluster in DMS Watson Building |
 Git | 18 November 2026 | 1:00 pm | 4:00 pm | G15 - Public Cluster in DMS Watson Building |
 Reproducibility and project management | 23 November 2026 | 1:00 pm | 4:00 pm | IOE (20) W4.01 |
