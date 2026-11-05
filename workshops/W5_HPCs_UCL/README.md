@@ -29,7 +29,7 @@ By the end of this session, participants will be able to:
 | wrap-up | 10 min |
 
 ## Intro activity — why use HPCs?
-HPCs are important when we need more compute power. Let's see if any of the participants have run into power problems: menti quiz. [Link] and QR code:
+HPCs are important when we need more compute power. Let's see if any of the participants have run into power problems: menti quiz. [Link](https://www.menti.com/alyp8mf53k7h).
 
 Have you ever had these problems?
 - You start a programme or hit run and your laptop is slow/unusable until it has finished
