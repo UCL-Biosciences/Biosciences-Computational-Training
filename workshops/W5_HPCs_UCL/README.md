@@ -44,9 +44,9 @@ HPCs address some of these problems:
 
 ## Exercises overview
 
-**Exercise 1 — cluster setup** [First](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W5_HPCs_UCL/Exercise1_Setup.md) we will get ourselves onto the cluster and set up everything we need - code, environment and data.
+**Exercise 1 — cluster setup** [First](/workshops/W5_HPCs_UCL/Exercise1_Setup.md) we will get ourselves onto the cluster and set up everything we need - code, environment and data.
 
-**Exercise 2 — Submit a job.**  Next we look at how to [run jobs](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/prep-2026/workshops/W5_HPCs_UCL/Exercise2_RunningJobs.md) on the HPC's powerful computers.
+**Exercise 2 — Submit a job.**  Next we look at how to [run jobs](/workshops/W5_HPCs_UCL/Exercise2_RunningJobs.md) on the HPC's powerful computers.
 
 ## UCL Computer Science Cluster 
 
