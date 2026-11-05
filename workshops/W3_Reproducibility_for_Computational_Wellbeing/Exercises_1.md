@@ -65,7 +65,7 @@ On the other hand, I tried to copy the project structure into a folder that alre
 If you finish this, look at a real project you are working on. How could the organisation be improved? Would this help you organise your work?
 
 
-**Menti check**: who does a clear structure actually help? [Link]
+**Menti check**: who does a clear structure actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
 ## Where do we store data? (35 mins)
 ### To git or not to git?
@@ -117,7 +117,7 @@ Research data can be unusable if it doesn't have metadata. At the very least, yo
 
 
 
-**Menti check**: who does appropriate data storage actually help? [Link]
+**Menti check**: who does appropriate data storage actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
 ## Summary
 You now have a repo that's structured sensibly, has a working `.gitignore`, and has its raw data sitting somewhere sensible rather than bloating your git history. None of that touches whether the *code itself* still runs elsewhere, though — that's next, after the break.
