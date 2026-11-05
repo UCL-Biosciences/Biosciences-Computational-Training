@@ -9,7 +9,7 @@ We will discuss a lot of stuff over the five workshops. Why should we bother wit
 - Which if any could be improved by increasing computational knowledge/skills?
 - What comp skills are you most interested in learning?
 
-2. Menti quiz to get feedback. Same questions.
+2. [Menti](https://www.menti.com/alyp8mf53k7h) quiz to get feedback. Same questions.
 
 ### Why learn?
 Some general thoughts.
