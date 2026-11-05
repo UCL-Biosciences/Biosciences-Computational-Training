@@ -73,8 +73,7 @@ Here's the "who does this help?" table, built from what came up in the room toda
 | Clear project structure | | | |
 | Appropriate data storage plan | | | |
 | Environment management (venv) | | | |
-| Documentation, metadata, file naming | | | |
-| Persistent IDs (ORCID, Zenodo DOI) | | | |
+| Documentation, metadata, persistent IDs (e.g. Zenodo) | | | |
 
 ### What problems have we covered today?
 The end of the rerun test asks everyone to make a note of anything that stopped them reproducing a previous project. Let us know the issues you found and we can discuss whether we have discussed solutions today - menti link**[ADD MENTI LINK]**.
