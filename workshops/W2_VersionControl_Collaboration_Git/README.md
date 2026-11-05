@@ -26,11 +26,9 @@ Participants will be able to:
 Today is about version control and collaborating on shared projects. We start by talking through some relevant challenges we face as researchers and how we might be able to solve them.
 
 ### Participant practice
-Let's talk about participant experience of version control and collaboration using this menti quiz. [Link](https://www.menti.com/albhakdq3wb9) and QR code:
+Let's talk about participant experience of version control and collaboration using this menti quiz. [Link](https://www.menti.com/alyp8mf53k7h9).
 
-<img width="200" height="200" alt="qr code for menti - version control and collab" src="https://github.com/user-attachments/assets/f1a91718-202e-426d-a784-06a30dca7796" />
-
-The questions (mostly in case menti doesn't work):
+The questions:
 - How do you manage version control in your day-to-day work?
 - What challenges do you face related to version control?
 - What do you do to manage collaboration on shared files?
