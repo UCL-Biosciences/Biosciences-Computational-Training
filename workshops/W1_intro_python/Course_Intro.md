@@ -9,10 +9,7 @@ We will discuss a lot of stuff over the five workshops. Why should we bother wit
 - Which if any could be improved by increasing computational knowledge/skills?
 - What comp skills are you most interested in learning?
 
-2. Menti quiz. To get feedback
--	Word cloud. What does computational research mean to you?
--	Word cloud. Why did you register?
--	Word cloud. What is the most valuable thing you could takeaway?
+2. Menti quiz to get feedback. Same questions.
 
 ### Why learn?
 Some general thoughts.
