@@ -46,7 +46,7 @@ Then look up a package online relevant to your project and install it:
 
 This is the bridge from everything you've done in W1 and W2 to the HPC session — you'll rebuild this exact environment on the cluster.
 
-**Menti check**: who does capturing your environment actually help? [Link]
+**Menti check**: who does capturing your environment actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
 ## Documentation with README files (15 mins)
 Humans like stories more than lists. Github repos are no different. A good github repo always has a README file (or similar) that provides a clear and simple overview of the repo. It helps us understand the aims of the project and navigate the repo.
@@ -89,7 +89,7 @@ We have simulated a code example today, but this also applies to many outputs: p
 If your project has a real dataset that should live somewhere more permanent than Zenodo's storage (large data, sensitive data, or data with a natural disciplinary home), have a quick look at [fairsharing.org](https://fairsharing.org) or [re3data.org](https://re3data.org) to see where it would actually belong — you don't need to upload anywhere today, just get a sense of what exists.
 
 
-**Menti check**: who does documentation, metadata, and a real DOI actually help? [Link]
+**Menti check**: who does documentation, metadata, and a real DOI actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
 ## Summary
 Your project is now structured, environment-captured, documented, and has a real, citable DOI attached to it. Go check your rerun-test sticky note from this morning — how many of those failure points would still happen to someone opening this repo today?
