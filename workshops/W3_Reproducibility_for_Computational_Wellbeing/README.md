@@ -25,11 +25,9 @@ By the end of today, you can:
 The files we made in week 1 are now fully managed by git (week 2). Now we'll look at how to make the project as reproducible and shareable possible, making the most of UCL systems. These are habits that transfer to any research you do outside of the training series.
 
 ### Participant practice
-Let's talk about participant experience of reproducibility using this menti quiz. [Link] and QR code:
+Let's talk about participant experience of reproducibility using this menti quiz. [Link](https://www.menti.com/alyp8mf53k7h):
 
-<!-- QR code placeholder -->
-
-The questions (mostly in case menti doesn't work):
+The questions:
 - Where do you store data at UCL?
 - How do you share data with colleagues and collaborators?
 - Have you ever received a colleague's code/data and struggled to get it running?
@@ -76,12 +74,12 @@ Here's the "who does this help?" table, built from what came up in the room toda
 | Documentation, metadata, persistent IDs (e.g. Zenodo) | | | |
 
 ### What problems have we covered today?
-The end of the rerun test asks everyone to make a note of anything that stopped them reproducing a previous project. Let us know the issues you found and we can discuss whether we have discussed solutions today - menti link**[ADD MENTI LINK]**.
+The end of the rerun test asks everyone to make a note of anything that stopped them reproducing a previous project. Let us know the issues you found and we can discuss whether we have discussed solutions today - [menti](https://www.menti.com/alyp8mf53k7h).
 
 ### FAIR-enough, not FAIR-perfect
 We want our work to be transparent and understandable so people can use it (and ideally earn us a few more citations). Nobody's project is perfectly FAIR but we should all be thinking about what is FAIR-enough for each project we work on.
 
-Using the last menti poll, choose which example from today you're most likely to implement in your work — write the README, snapshot the environment, move data to RDSS, tag a release, or something else entirely. [Link]
+Using the last [menti](https://www.menti.com/alyp8mf53k7h) poll, choose which example from today you're most likely to implement in your work — write the README, snapshot the environment, move data to RDSS, tag a release, or something else entirely. [Link]
 
 ## What's next
 You now have a version-controlled, reproducible, documented, and citable project. Next week, we take a detour to ask what all of this means in the midst of the AI revolution!
