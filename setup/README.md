@@ -35,7 +35,7 @@ python -m venv carpentries
    - Mac/Linux: `source carpentries/bin/activate`
    - Windows (Git Bash): `source carpentries/Scripts/activate`
    You should see `(carpentries)` at the start of your terminal line.
-5. Download [`requirements.txt`](https://raw.githubusercontent.com/UCL-Biosciences/Biosciences-Computational-Training/prep-2026/setup/requirements.txt) (right-click the link > *Save link as*) into your course folder. It lists the packages we need.
+5. Download [`requirements.txt`](/setup/requirements.txt) (right-click the link > *Save link as*) into your course folder. It lists the packages we need.
 6. Install them:
 ```
 pip install -r requirements.txt
