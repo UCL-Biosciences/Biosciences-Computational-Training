@@ -77,7 +77,7 @@ python3 -m venv moleRatvenv
 source moleRatvenv/bin/activate
 # Within the venv, use pip to install required packaes
 pip install numpy
-pip install matplotlib
+pip install matplotlib # if you get a pillow error, try running this first: pip install -no-binary=:all: pillow
 # Once finished, get out of the venv
 deactivate
 ```
