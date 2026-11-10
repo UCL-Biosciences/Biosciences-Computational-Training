@@ -14,7 +14,7 @@ Some examples
 -	**It makes reproducibility easy**. It is easy to upload your code with a paper
 
 ## Aims
-- explore Jupyter Lab
+- explore Visual Studio Code
 - see python fundamentals
 - import and wrangle data
 - do some plotting
