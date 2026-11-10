@@ -5,7 +5,7 @@ We use HPCs to run our code on powerful computers. We do this by writing job scr
 ## Creating .py script
 The great thing about notebooks is that they are interactive and show us the outputs of our work as we run the code. When submitting jobs to HPCs, we do not run the code interactively and won't view the outputs until the end of the job. Notebooks are therefore not the right type of file to run as jobs on HPCs.
 
-We can use the code in our notebooks but must convert it first into a script file. This is a file that contains code that runs one-line-at-a-time and generally saves outputs to file. You can convert notebooks to scripts in VSC but today we will use an script we tested previously so we know it will work on the cluster:
+We can use the code in our notebooks but must convert it first into a script file. This is a file that contains code that runs one-line-at-a-time and generally saves outputs to file. You can convert notebooks to scripts in VSC but today we will use a script we tested previously so we know it will work on the cluster:
 
 1. Download the script to your local machine from [here](/workshops/W5_HPCs_UCL/scripts/activity_stats.py)
 2. Copy it to your git clone on the HPC
