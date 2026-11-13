@@ -8,36 +8,61 @@ Our engineering team brings decades of combined experience across diverse resear
 
 <img width="750" height="111" alt="image" src="https://github.com/user-attachments/assets/6f48dcbc-44f5-4c76-b716-49eab842ac4e" />
 
-
-## Visual Studio Code Setup
-VSC can log in to HPCs, allowing you to browse files, edit code and run commands within the interface. This provides an alternative to connecting to the cluster through a terminal session, and subsequently editing files with text editors such as nano and vi.
-
-Older versions of VSC, specifically 1.9.8 or below can integrate with the cluster through the following [instructions](https://hpc.cs.ucl.ac.uk/software/index.html). It is possible to use more recent versions of VSC, however this requires further tweaking to your local environment through the following [walkthrough](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/jayChanges/workshops/W5_HPCs_UCL/VSCodeWalkthrough.md).
-
-
 ## Logging in
-First, we will log in to the cluster using the [ssh](https://man7.org/linux/man-pages/man1/ssh.1.html) command.
+First, we will log in to the cluster using the [ssh](https://man7.org/linux/man-pages/man1/ssh.1.html) command. Open a Terminal (Mac) or Git Bash (Windows) shell.
 
 ```
 #First, log in to a gateway node to enter the CS network. Remember to use your CS username, rather than your centralized UCL username!
 #knuckles for taught students
 #tails for PhD students or staff
-ssh compSciUsername@knuckles.cs.ucl.ac.uk
+ssh compSciUsername@tails.cs.ucl.ac.uk
 
 #Then, log in to the Biosciences log-in node
 ssh compSciUsername@pchuckle.cs.ucl.ac.uk
 ```
+This takes you to a login node on the pchuckle cluster. We will talk about what that means later.
 
 ## Setting up a directory
 
-Make a project folder in your home directory, and move into it:
+Make a project folder in your home directory, and move into it. In your terminal window, type:
 ```
 mkdir my_project_dir
-cd my_project_dir
+```
+You can check the it was made using `ls`, which will show all folders and files in your current "working directory". 
+
+> **A note on working directories**. When you open a programme for looking at files (e.g. File Explorer on Windows), it opens you to a specific folder. From there, you can see all the files and folders it contains. You can click on a file to open it or click on a folder to show the contents on that folder, and the path at the top of the viewer will change. Command lines have a similar concept, where your current "location" is called a working directory. When you open a terminal, the session starts in a place (same as File Explorer) and you can only view files/folders from that directory.
+
+## Navigating from working directories
+There are a few essential things to know about navigating file systems using the command line. For starters:
+
+```
+# to see where you are (what your current working directory is)
+pwd # print working directory
+
+# to see what your current working directory contains
+ls # list
+
+# to change directory
+cd my_project_dir # change directory to my_project_dir
+
 ```
 
+This is how you can access an HPC from the command line and start some simple activities.
+
+## Visual Studio Code Setup
+Visual Studio Code offers a more intuitive way of navigating file systems, as we have seen in previous weeks. VSC can also log in to HPCs, allowing you to browse files, edit code and run commands within the interface. This provides an alternative to connecting to the cluster through a terminal session, and subsequently editing files with text editors such as nano and vim.
+
+### Setting up VSC
+#### Older versions of VSC (<= 1.9.8)
+Older versions of VSC, specifically 1.9.8 or below can integrate with the cluster through the following [instructions](https://hpc.cs.ucl.ac.uk/software/index.html).
+
+#### New versions of VSC (>1.9.8)
+It is possible to use more recent versions of VSC, however this requires further tweaking to your local environment through the following [walkthrough](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/blob/jayChanges/workshops/W5_HPCs_UCL/VSCodeWalkthrough.md).
+
 ## Clone your git repository
-Then clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remember to change the path to your repository) to get your code onto the HPC.
+In Visual Studio Code, you can clone repositories by clicking on the `Source Control` extension, click `Clone Repository` > `Clone from Github`. This should show you a list of github repositories you can clone. If it doesn't, you might not be logged into Github in VSC. Log in by clicking the accounts button (bottom left of VSC, a head and shoulders icon in a circle, above the gear/settings sign) and logging into github.
+
+> Command line equivalent: clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remember to change the path to your repository)
 
 Why wouldn't we just copy over the relevant files??
 
