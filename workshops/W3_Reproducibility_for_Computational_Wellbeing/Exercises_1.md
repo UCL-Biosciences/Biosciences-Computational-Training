@@ -60,7 +60,7 @@ Using a standard project structure is easier and more reliable than starting a n
 
 This will integrate the project structure into your current setup without overwriting anything. I tried it and it worked anyway! If there are any problems, you can always return to previous states of the repo, which is one of git's big strengths.
 
-On the other hand, I tried to copy the project structure into a folder that already contained a data and code folder, and it overwrote everything. Silly VSC, clever github!
+On the other hand, I tried to copy the project structure into a folder in VSC that already contained a data and code folder, and it overwrote everything. Silly VSC, clever github!
 
 If you finish this, look at a real project you are working on. How could the organisation be improved? Would this help you organise your work?
 
