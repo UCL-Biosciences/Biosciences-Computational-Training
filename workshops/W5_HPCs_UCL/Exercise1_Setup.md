@@ -116,6 +116,10 @@ source moleRatvenv/bin/activate
 ```
 
 ### Copying input data
+You can copy files from your laptop directly to the cluster in VSC by dragging them into the explorer or copy-pasting into the explorer (as explained [here](https://code.visualstudio.com/docs/editing/getting-started/userinterface#_explorer-view)).
+
+If that doesn't work, you can copy from the command line using commands like `scp`:
+
 ```
 #Run this on your LOCAL device
 scp /path/to/your/data jschneid@pchuckle:/home/csUserName/path/you/want
