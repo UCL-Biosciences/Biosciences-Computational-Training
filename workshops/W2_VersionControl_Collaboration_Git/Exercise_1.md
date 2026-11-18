@@ -24,7 +24,7 @@ git config --global user.email "your.email@email.com"
 
 Now we are ready to **"clone" our repo**.
 1. In Visual Studio Code, `Ctrl/Cmd+Shift+P` → `Git: Clone`. If you have logged in successfully, you should be able to search for the repo you made earlier
-2. Select the training repo and clone it to where ever you are working on your laptop. Select "Cancel" to keep your current folder open.
+2. Select the training repo and clone it to where ever you are working on your laptop. Click on "Open" from the options that appear.
 
 #### Adding files to the repo (20 mins)
 We are going to add the code, data and outputs from last week. To simulate a real example, we will have two versions - the "wrong" data and the "correct" data. And get a recap on last week while we are here.
