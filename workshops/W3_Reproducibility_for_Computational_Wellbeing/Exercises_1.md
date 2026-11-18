@@ -32,7 +32,7 @@ Read through this [guide](https://datamanagement.hms.harvard.edu/plan-design/fil
 Look at your folder from the first two weeks. Where does it diverge from this? Make a note
 
 ### Project Structure
-File and folder organisation is the big brother of file naming:
+File and folder organisation is the next level of file naming:
 
 <img width="1440" height="900" alt="724619122_e634531f5f_o" src="https://github.com/user-attachments/assets/f6b9dd3e-62c5-4002-8f08-ca2054a7ec73" />
 
@@ -64,14 +64,11 @@ On the other hand, I tried to copy the project structure into a folder in VSC th
 
 If you finish this, look at a real project you are working on. How could the organisation be improved? Would this help you organise your work?
 
-
 **Menti check**: who does a clear structure actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
 ## Where do we store data? (35 mins)
 ### To git or not to git?
-Not everything belongs in git. Large raw data files bloat your repository and slow down every clone, forever — git never forgets, even if you delete the file later.
-
-Our projects often have data folders because it is easy to work within a single project folder. But we don't want the data to end up on git - how can we keep the data in the `data` folder but tell git not to push it to github? Git uses `.gitignore` files to know which files and folders should be ignored. Anything listed in the `.gitignore` file will not be tracked or committed, which is what we want to do with the `data` folder. 
+Not everything belongs in git. Raw data files should live in appropriate research data storage (see below) and should never be stored on github. Large files may not be appropriate even if they are not raw data as they can make working with github slow and cumbersome. Git limits repos to 10GB (but recommends <5GB) and individuals files to ~100MB. Our projects often have data folders because it is easy to work within a single project folder. But we don't want the data to end up on git - how can we keep the data in the `data` folder but tell git not to push it to github? Git uses `.gitignore` files to know which files and folders should be ignored. Anything listed in the `.gitignore` file will not be tracked or committed, which is what we want to do with the `data` folder. 
 
 E.g. this would ensure everything in the data is ignored and never pushed to github:
 
@@ -83,7 +80,7 @@ data/
 Things to consider when deciding whether to ignore something:
 1. Security - is there anything sensitive (personal info, passwords) that we never want to be public?
 2. Local machine/session files e.g. .DS_Store on mac, .Rproj files or python notebook checkpoints
-3. Size - is a file or folder too big to be pushed and pulled? Where else could it be stored?
+3. Size - is a file or folder too big to be pushed and pulled? Where else could it be stored? Git limits repos to 10GB and files to ~100MB
 4. Reproducibility - which files do we need to understand and reproduce a project?
 5. Audience - who is the repo for? Will they want to see your notes, your code, and/or your results?
 
@@ -98,7 +95,7 @@ Things to consider when deciding whether to ignore something:
 Write a working `.gitignore` for your project based on this. (GitHub has good starter templates for Python projects if you want a base to edit.)
 
 **So where does the big raw data actually go?**
-## Research data
+### Research data
 While we are still working on research data, we need somewhere to store it. This is where institutional storage comes in — UCL's Research Data Storage Service (RDSS). You should already have access to a training project we set up in advance.
 
 1. Mount the RDSS training project using the guides for [Windows](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service/how-mount-research-data-storage-service-windows) and [Mac](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/research-data-storage-service/how-mount-research-data-storage-service-mac-os). If that doesn't work, you can try using the file transfer programmes listed for windows and Mac. Ask if you are having problems!
@@ -114,8 +111,6 @@ The best solution is to publish them in domain-specific archives e.g. ncbi, [bio
 
 ## Metadata
 Research data can be unusable if it doesn't have metadata. At the very least, you need sample metadata to link research data to sample characteristics. This should be enough to reproduce your results. There are domain-specific standards that recommend what we should include.
-
-
 
 **Menti check**: who does appropriate data storage actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
