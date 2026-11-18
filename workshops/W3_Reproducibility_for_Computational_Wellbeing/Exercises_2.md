@@ -15,15 +15,15 @@ So, venv is for 1. installing packages and 2. managing reproducible environments
 **Create an environment**
 Open a terminal window and run:
 
-`python -m venv project-dna`
+`python -m venv project-NMR`
 
 **Activate it**. To work with an environment, it has to be activated. You can also deactivate it with `deactivate`.
 
 Mac:
-`source project-dna/bin/activate`
+`source project-NMR/bin/activate`
 
 Windows:
-`source project-dna/Scripts/activate`
+`source project-NMR/Scripts/activate`
 
 **Install packages**.
 First install a general python package:
@@ -36,7 +36,7 @@ Then look up a package online relevant to your project and install it:
 
 **Take a snapshot**. Export the list of packages in the environment and save it to file:
 
-`pip freeze > requirements-project-dna.txt`
+`pip freeze > requirements-project-NMR.txt`
 
 **Add the file to your github repository**. We want to add the requirements file but not the whole venv folder. First, make sure your terminal is in the right folder (you can change it by using `Open Folder` in Visual Studio Code - you will have to open a new Terminal and activate the env again). Add the venv folder path to the `.gitignore` file from earlier, then add files to the repo using the Source Control extension we saw last week - how much do you remember?!
 
@@ -56,6 +56,7 @@ Humans like stories more than lists. Github repos are no different. A good githu
 - how do you set up the environment? (point to requirements file)
 - what order do you run things in, to get from raw data to the results?
 - where does the raw data actually live? (link to RDSS or wherever you put it)
+- What are the key columns in your data and what units are they in?
 
 Keep it short (takes 1-2 minutes to read).
 
@@ -63,6 +64,17 @@ Keep it short (takes 1-2 minutes to read).
 All of this work is building towards an Open Science project. Making things publicly available, easy to understand and FAIR means that 1. your work will be found and appreciated and 2. your results will be more reproducible.
 
 An important part of this is making your project findable and citable. Now we will practice doing that with Zenodo. Zenodo is a free, open repository that archives outputs and gives them a permanent, citable DOI. This means your work can be found, credited and cited even if the GitHub repo (or other original host of the data) changes or disappears.
+
+### Citation and Licences
+Two small files decide whether anyone can actually use what you publish.
+
+A **licence** sets out what others are allowed to do with your work. Without one, the legal default is that nobody can reuse, modify or redistribute it so an unlicensed public repo is readable but not reusable. On GitHub: `Add file` > `Create new file`, type `LICENSE` as the filename, and a template picker appears. MIT is the simplest permissive choice for code; CC-BY suits data and documents.
+
+A **citation file** tells people how you want to be credited. Add a file called `CITATION.cff` listing the authors (with ORCIDs), a title and a version, and GitHub displays a "Cite this repository" button on the repo page that generates the reference for people.
+
+**Add both to your repo now**, before we publish — the archived version on Zenodo captures whatever is in the repo at the time of the release, so anything missing now is missing in the permanent record.
+
+### Publishing on Zenodo
 
 Today, we will use the _Zenodo sandbox_, which is just used for testing - DOIs are not real and will not represent a real record of anything.
 
@@ -81,9 +93,17 @@ Today, we will use the _Zenodo sandbox_, which is just used for testing - DOIs a
 7. Go back to the [Zenodo sandbox page](https://sandbox.zenodo.org/account/settings/github/), where you will see a (fake) DOI badge has been created for this repo. You can click on the badge, copy the markdown text and paste it into your repo's README.md, which will create a really cool shiny blue DOI badge. Hooray.
 8. You can finally go back to your records on Zenodo sandbox (click on `My dashboard`), where you will find the published record and can edit details to increase its FAIRness.
 
-This record is now saved, citable and searchable. Google searches (although not scholar) look through Zenodo so your work could show up in relevant searches. Better than being buried in a supplementary file! And it can be cited (more citations!), will persist even if Github or other sites disappear, and meets many funder and journal requirements for sharing outputs.
+**Zenodo Metadata**
+Here are some things you can fill in to make your work more findable:
+- **title** (not just the repo name)
+- **authors** add your ORCID here, this is what links the output to you permanently
+- **description** a couple of sentences on what the project is and what data it uses
+- **licence** (match your LICENSE file)
+- **keywords** how would someone searching for this phrase it?
 
-We have simulated a code example today, but this also applies to many outputs: protocols, talks, training, datasets, whitepapers. Anything that you want to publish a record of!
+If this was the real zenodo (i.e. not the sandbox), the record would be citable and searchable. Google searches (although not scholar) look through Zenodo so your work could show up in relevant searches. Better than being buried in a supplementary file! And it can be cited (more citations!), the DOI will persist even if Github or other sites disappear, and meets many funder and journal requirements for sharing outputs.
+
+We have simulated an example today based on code and analysis, but this also applies to many outputs: protocols, talks, training, datasets, whitepapers. Anything that you want to publish a record of!
 
 ## Publishing real datasets
 If your project has a real dataset that should live somewhere more permanent than Zenodo's storage (large data, sensitive data, or data with a natural disciplinary home), have a quick look at [fairsharing.org](https://fairsharing.org) or [re3data.org](https://re3data.org) to see where it would actually belong — you don't need to upload anywhere today, just get a sense of what exists.
