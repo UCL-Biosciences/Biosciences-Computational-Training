@@ -7,7 +7,7 @@ By the end of today, you can:
 - capture your environment so the analysis reruns later, on other machines, and by someone else
 - document a project so future-you or a collaborator can understand it without hours of digging or emails
 - use some key UCL systems for data storage and sharing
-- share and archive a project as a citable output — GitHub → Zenodo DOI, data to an appropriate repository
+- share and archive a project as a citable output - GitHub → Zenodo DOI, data to an appropriate repository
 - judge what "reproducible and FAIR enough" looks like for your own work, and leave with one concrete change to make
 
 ## Plan
@@ -25,7 +25,7 @@ By the end of today, you can:
 The files we made in week 1 are now fully managed by git (week 2). Now we'll look at how to make the project as reproducible and shareable possible, making the most of UCL systems. These are habits that transfer to any research you do outside of the training series.
 
 ### Participant practice
-Let's talk about participant experience of reproducibility using this menti quiz. [Link](https://www.menti.com/alyp8mf53k7h):
+Let's talk about your experience of reproducibility using this menti quiz. [Link](https://www.menti.com/alyp8mf53k7h):
 
 The questions:
 - Where do you store data at UCL?
@@ -36,7 +36,6 @@ The questions:
 
 ### Discuss responses
 Chances are, almost everyone in the room has a story for at least one of these. 
-
 
 Lack of reproducibility isn't a rare edge case and it affects us in many ways:
 - **Yourself** — you lose time re-figuring-out your own past work, and don't have total confidence in the results.
@@ -51,10 +50,8 @@ Today is about closing that gap with some practical steps that will make it easi
 
 ### Today's project
 You have two options for today, and either is fine:
-- **Your W2 repo** — the notebook, data and outputs from the shared dataset you picked. Tidy, but you already know it works.
+- **Your W2 repo** — the notebook, data and outputs from the shared dataset you picked.
 - **A real project of your own** — more representative of a real project but less predictable end result!
-
-Whichever you choose, work in it for the whole session so you leave with real progress, not a toy example.
 
 ## Exercises
 
