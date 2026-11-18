@@ -76,8 +76,8 @@ The end of the rerun test asks everyone to make a note of anything that stopped 
 ### FAIR-enough, not FAIR-perfect
 We want our work to be transparent and understandable so people can use it (and ideally earn us a few more citations). Nobody's project is perfectly FAIR but we should all be thinking about what is FAIR-enough for each project we work on.
 
-Using the last [menti](https://www.menti.com/alyp8mf53k7h) poll, choose which example from today you're most likely to implement in your work — write the README, snapshot the environment, move data to RDSS, tag a release, or something else entirely. [Link]
+Using the last [menti](https://www.menti.com/alyp8mf53k7h) poll, choose which example from today you're most likely to implement in your work — write the README, snapshot the environment, move data to RDSS, tag a release, or something else entirely.
 
 ## What's next
-You now have a version-controlled, reproducible, documented, and citable project. Next week, we take a detour to ask what all of this means in the midst of the AI revolution!
+You now have a version-controlled, reproducible, documented, and "citable" project. Next week, we take a detour to ask what all of this means in the midst of the AI revolution!
 
