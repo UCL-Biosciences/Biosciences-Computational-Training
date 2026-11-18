@@ -29,7 +29,7 @@ Now we are ready to **"clone" our repo**.
 #### Adding files to the repo (20 mins)
 We are going to add the code, data and outputs from last week. To simulate a real example, we will have two versions - the "wrong" data and the "correct" data. And get a recap on last week while we are here.
 
-1. Go to the notebook you made last week. Edit the file path to the original dataset and re-run the notebook. Make sure the outputs are saved.
+1. Go to the plotting notebook (the third one) you made last week. Edit the file path to the original dataset and re-run the notebook. Make sure the outputs are saved.
 2. In Visual Studio Code's explorer panel, move the notebook, data and outputs into the local clone of the repo (made in previous step).
 3. Find the `Source Control` icon on the left hand side (<img width="25.4" height="25.4" alt="image" src="https://github.com/user-attachments/assets/bc9ffeb9-d358-400c-9339-d12257525abd" />) and you should see all the files you moved listed as 'Changes'. This means git has found the new files and is ready to add them to the repo = start "tracking" them.
 4. Type a message in the box at the top of 'Source Control' e.g. "first commit", click 'Commit' and click on 'Yes'. This will add all the files to the repository and git will now track all changes to them.
