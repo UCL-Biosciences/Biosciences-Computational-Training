@@ -114,7 +114,7 @@ While we are still working on research data, we need somewhere to store it. This
 2. Upload your raw data there
 
 ### Other storage solutions
-RDSS for most research data but there are lots of options. Some more info [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/data_storage_at_UCL.md). In particular, sensitive data must not be on RDSS! See TRE for more info.
+RDSS for most research data but there are lots of options. Some more info [here](https://ucl-biosciences.github.io/Biosciences-Comp-Support/data_storage_at_UCL.html). In particular, sensitive data must not be on RDSS! See TRE for more info.
 
 **Menti check**: who does appropriate data storage actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
