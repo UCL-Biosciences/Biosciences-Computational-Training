@@ -57,10 +57,12 @@ Using a standard project structure is easier and more reliable than starting a n
 1. Download [this example project structure](/workshops/W3_Reproducibility_for_Computational_Wellbeing/project-structure.zip) and extract all the contents.
 2. Make sure your local and remote repos are synchronised by committing and synchronising in Visual Studio Code (instructions [here](/workshops/W2_VersionControl_Collaboration_Git/Exercise_1.md#adding-files-to-the-repo-20-mins)).
 3. Add the project structure to the **online repository, not through VSC**. To do this, open the github page for the repo, click on the `+` button next to the big green `<> Code` button, and drag and drop the files/folders in the "project-name" folder. Note, this means not the project-name folder itself, but go into project-name, select everything, then drag and drop.
+4. Now we will do some reorganising. It is easier to move files in VSC so we need to make changes there. First, make sure the new project structure is in the online repo, then `Pull` or `Sync` your project in VSC to get the changes on your local machine.
+5. Move the files; data to data folder, plot to results folder. Leave the notebook in the repo root.
+6. Try to run notebook 3. It will fail due to broken paths. We change the paths for data in and plot out, then run again.
+7. Once working, save and push new changes to repo.
 
-This will integrate the project structure into your current setup without overwriting anything. I tried it and it worked anyway! If there are any problems, you can always return to previous states of the repo, which is one of git's big strengths.
-
-On the other hand, I tried to copy the project structure into a folder in VSC that already contained a data and code folder, and it overwrote everything. Silly VSC, clever github!
+_Having a standard project structure makes you more organised. But on top of that, it also means you will have less filepath errors._
 
 If you finish this, look at a real project you are working on. How could the organisation be improved? Would this help you organise your work?
 
@@ -89,6 +91,7 @@ Things to consider when deciding whether to ignore something:
 - a 2GB raw sequencing file
 - your `results/` figures
 - your environment file
+- all the libraries/software you have downloaded for a project
 - a spreadsheet of sample metadata
 - a folder of cached temporary files
 
