@@ -39,7 +39,7 @@ Then look up a package online relevant to your research and install it:
 
 **Take a snapshot**. Export the list of packages in the environment and save it to file:
 
-`pip freeze > YOUR-REPO-NAME/setup/requirements-project-NMR.txt` (remember to change YOUR-REPO-NAME to the name of the folder containing your repo).
+`pip freeze > YOUR-REPO-NAME/env/requirements-project-NMR.txt` (remember to change YOUR-REPO-NAME to the name of the folder containing your repo) and `deactivate`.
 
 **Add the file to your github repository**. We want to add the requirements file but not the whole venv folder. First, make sure your terminal is in the right folder (you can change it by using `Open Folder` in Visual Studio Code). Make sure the `project-NMR` venv folder is not in the repo (or add `project-NMR` to your .gitignore!). Add files to the repo using the Source Control extension.
 
@@ -48,18 +48,28 @@ At this point, your environment is safely recorded, including the exact package 
 #### Recreating environments
 Before the course, you all created an environment called 'carpentries' using venv. Now, we will repeat those steps and discuss what they do:
 1. Make sure you have the requirements.txt file from the setup somewhere in your project folder.
-2. Run workbook 3 (plotting) using the `carpentries` kernel. Open the notebook and find the `Run All` button.
-3. 
+2. Run workbook 3 (plotting) using the `carpentries` kernel. Open the notebook and find the `Run All` button. Make sure all the cells run. If not, let us know!
+3. Save the environment's packages by opening a terminal, activating the venv:
+
+Mac:
+`source carpentries/bin/activate`
+
+Windows:
+`source carpentries/Scripts/activate`
+
+Then saving the environment to file: `pip freeze > YOUR-REPO-NAME/env/requirements-versions.txt`
+
+How is that different to the original `requirements.txt` file?
+
+5. Now let's see what the `carpentries` folder does. Rename it by right-clicking on the `carpentries` _folder_ in VSC explorer and calling it "carpentries_old". We keep it renamed as a backup in case there are problems recreating the env.
+6. Try to run the notebook. It should fail because the packages you need that live in the `carpentries` are no longer found in that folder location.
+7. But fear not! The project is not lost! We can recreate the env as we did in the [setup](https://github.com/UCL-Biosciences/Biosciences-Computational-Training/tree/main/setup#4-create-your-course-folder-and-software-environment). Remember to use `YOUR-REPO-NAME/env/requirements-versions.txt` and call it `carpentries` again.
+8. Finally, re-run the notebook in the recreated env. VSC will probably be a bit confused, so we help by explicitly selecting the environment again: `Ctrl+Shift+P` → `Python: select interpreter`. Now the notebook should run again.
+9. Once it runs, clean up by deleting the "carpentries_old" folder we made as a backup. Push the "reuquirements-versions.txt" to github.
 
 
 
 
-
-**Test it** Could we run the workshops from week 1 using this environment? How do we know what packages we need to use? Can you install everything we need to run it? Stretch goal...
-
-**(Optional) Partner check**: swap repos with someone nearby. Can they clone your repo, rebuild your environment from the file you just committed, and get your code running — without asking you anything? If not, what's missing?
-
-This is the bridge from everything you've done in W1 and W2 to the HPC session — you'll rebuild this exact environment on the cluster.
 
 **Menti check**: who does capturing your environment actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
