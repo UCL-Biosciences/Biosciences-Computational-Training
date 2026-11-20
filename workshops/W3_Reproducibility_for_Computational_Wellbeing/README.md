@@ -48,11 +48,6 @@ Today is about closing that gap with some practical steps that will make it easi
 
 **Reproducibility** means that you, or anyone else, can take the same data and code and get the same results again. **FAIR** is a set of principles for making research outputs Findable, Accessible, Interoperable and Reusable, so data, code and other outputs can be found, used and cited. The biggest beneficiary of both is future-you: the person who has to reopen this project in six months, answer a reviewer, or pick the work up on a new laptop. The things we cover today should always help you first and make your life less stressful, supporting collaborators and the wider community as a happy bonus.
 
-### Today's project
-You have two options for today, and either is fine:
-- **Your W2 repo** — the notebook, data and outputs from the shared dataset you picked.
-- **A real project of your own** — more representative of a real project but less predictable end result!
-
 ## Exercises
 
 We'll build up a picture of *why* each habit matters as we go, using a running "who does this help?" check — yourself, your collaborators, or the wider community. By the end of the session we'll reveal the full picture, built from your answers.
