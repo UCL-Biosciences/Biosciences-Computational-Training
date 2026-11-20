@@ -67,10 +67,6 @@ How is that different to the original `requirements.txt` file?
 8. Finally, re-run the notebook in the recreated env. VSC will probably be a bit confused, so we help by explicitly selecting the environment again: `Ctrl+Shift+P` → `Python: select interpreter`. Now the notebook should run again.
 9. Once it runs, clean up by deleting the "carpentries_old" folder we made as a backup. Push the "reuquirements-versions.txt" to github.
 
-
-
-
-
 **Menti check**: who does capturing your environment actually help? [Link](https://www.menti.com/alyp8mf53k7h)
 
 ## Documentation with README files (15 mins)
@@ -132,6 +128,13 @@ We have simulated an example today based on code and analysis, but this also app
 
 ## Publishing real datasets
 If your project has a real dataset that should live somewhere more permanent than Zenodo's storage (large data, sensitive data, or data with a natural disciplinary home), have a quick look at [fairsharing.org](https://fairsharing.org) or [re3data.org](https://re3data.org) to see where it would actually belong — you don't need to upload anywhere today, just get a sense of what exists.
+
+Published data should be FAIR. It increases the probability someone else will use it, which increases your citation count while also making best use of the data.
+
+The best solution is to publish them in domain-specific archives e.g. ncbi, [bioimage archive](https://www.ebi.ac.uk/bioimage-archive/) etc. General-purpose repositories are also good if there is not an appropriate specific option, plus UCL has a Research Data Repository where datasets can be published and are discoverable by unique DOIs - more citations!
+
+## Metadata
+Research data can be unusable if it doesn't have metadata. At the very least, you need sample metadata to link research data to sample characteristics. This should be enough to reproduce your results. There are domain-specific standards that recommend what we should include.
 
 
 **Menti check**: who does documentation, metadata, and a real DOI actually help? [Link](https://www.menti.com/alyp8mf53k7h)
