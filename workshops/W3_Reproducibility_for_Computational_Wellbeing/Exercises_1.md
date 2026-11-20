@@ -39,7 +39,6 @@ E.g.:
 Look at your folder from the first two weeks. Are there any violations of this?
 
 ### Project Structure
-File and folder organisation is the next level of file naming:
 
 <img width="1440" height="900" alt="724619122_e634531f5f_o" src="https://github.com/user-attachments/assets/f6b9dd3e-62c5-4002-8f08-ca2054a7ec73" />
 
