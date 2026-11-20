@@ -8,12 +8,15 @@ Fixing this means writing down exactly what your environment looked like when ev
 ### Venv environments
 Venv is a system for managing python packages using environments. It can install packages from a big archive and is also an environment manager. You can use it to make separate project workspaces called "environments". Using separate environments means you can have different versions of packages for different projects. This is surprisingly important when working with python libraries.
 
-So, venv is for 1. installing packages and 2. managing reproducible environments.
+So, venv is for 1. installing packages and 2. managing reproducible environments. We used venv to make the "carpentries" environment we used in week 1 and week 2. 
 
-**Open your project folder.** In Visual Studio Code, use `Open Folder` to open the folder of the project you are working in, 
+Now, we will use venv to create a new environment, installing and recording the packages it downloads. Next, we will show how this works by reusing the carpentries env we made during the setup.
+
+#### Making new environments
+**Open your project folder.** In Visual Studio Code, use `Open Folder` to open the folder of the project you are working in. Note, this is the project folder, not the repo which lives inside the project folder.
 
 **Create an environment**
-Open a terminal window and run:
+Open a (git bash) terminal window and run:
 
 `python -m venv project-NMR`
 
@@ -30,15 +33,27 @@ First install a general python package:
 
 `pip install pandas==2.3.3 jupyter`
 
-Then look up a package online relevant to your project and install it:
+Then look up a package online relevant to your research and install it:
 
 `pip install <YOUR PACKAGE HERE>`
 
 **Take a snapshot**. Export the list of packages in the environment and save it to file:
 
-`pip freeze > requirements-project-NMR.txt`
+`pip freeze > YOUR-REPO-NAME/setup/requirements-project-NMR.txt` (remember to change YOUR-REPO-NAME to the name of the folder containing your repo).
 
-**Add the file to your github repository**. We want to add the requirements file but not the whole venv folder. First, make sure your terminal is in the right folder (you can change it by using `Open Folder` in Visual Studio Code - you will have to open a new Terminal and activate the env again). Add the venv folder path to the `.gitignore` file from earlier, then add files to the repo using the Source Control extension we saw last week - how much do you remember?!
+**Add the file to your github repository**. We want to add the requirements file but not the whole venv folder. First, make sure your terminal is in the right folder (you can change it by using `Open Folder` in Visual Studio Code). Make sure the `project-NMR` venv folder is not in the repo (or add `project-NMR` to your .gitignore!). Add files to the repo using the Source Control extension.
+
+At this point, your environment is safely recorded, including the exact package versions - have a look at the requirements-project-NMR.txt. It is safe to delete the venv project as we can recreate it from the requirements file. Delete `project-NMR` using VSC's file explorer.
+
+#### Recreating environments
+Before the course, you all created an environment called 'carpentries' using venv. Now, we will repeat those steps and discuss what they do:
+1. Make sure you have the requirements.txt file from the setup somewhere in your project folder.
+2. Run workbook 3 (plotting) using the `carpentries` kernel. Open the notebook and find the `Run All` button.
+3. 
+
+
+
+
 
 **Test it** Could we run the workshops from week 1 using this environment? How do we know what packages we need to use? Can you install everything we need to run it? Stretch goal...
 
