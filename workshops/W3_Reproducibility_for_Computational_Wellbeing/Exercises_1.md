@@ -27,7 +27,11 @@ File naming is the cause of a lot of confusion. E.g. see this image from [phdcom
 
 <img width="600" height="484" alt="image" src="https://github.com/user-attachments/assets/cf9b7761-47c7-4259-a0de-898dc043802e" />
 
-Read through this [guide](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions) for file naming - think about what would be important for you. Which of these is something you have not thought about before?
+Read through this [guide](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions) for file naming - think about what would be important for you. Which of these is something you have not thought about before? E.g.:
+- identify important metadata that could be used in names
+- abbreviate/encode metadata
+- use versioning via naming or version control with git
+- use dashes (-) or underscores (_) but not spaces as separators
 
 Look at your folder from the first two weeks. Where does it diverge from this? Make a note
 
