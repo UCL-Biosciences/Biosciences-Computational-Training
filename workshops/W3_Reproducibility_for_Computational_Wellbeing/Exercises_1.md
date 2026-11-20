@@ -101,6 +101,8 @@ Things to consider when deciding whether to ignore something:
 - a spreadsheet of sample metadata
 - a folder of cached temporary files
 
+Use post-its to decide for each!
+
 Write a working `.gitignore` for your project based on this. (GitHub has good starter templates for Python projects if you want a base to edit.)
 
 **So where does the big raw data actually go?**
