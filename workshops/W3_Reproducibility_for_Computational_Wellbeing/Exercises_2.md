@@ -13,14 +13,14 @@ So, venv is for 1. installing packages and 2. managing reproducible environments
 Now, we will use venv to create a new environment, installing and recording the packages it downloads. Next, we will show how this works by reusing the carpentries env we made during the setup.
 
 #### Making new environments
-**Open your project folder.** In Visual Studio Code, use `Open Folder` to open the folder of the project you are working in. Note, this is the project folder, not the repo which lives inside the project folder.
+1. **Open your project folder.** In Visual Studio Code, use `Open Folder` to open the folder of the project you are working in. Note, this is the project folder, not the repo which lives inside the project folder.
 
-**Create an environment**
+2. **Create an environment**
 Open a (git bash) terminal window and run:
 
 `python -m venv project-NMR`
 
-**Activate it**. To work with an environment, it has to be activated. You can also deactivate it with `deactivate`.
+3. **Activate it**. To work with an environment, it has to be activated. You can also deactivate it with `deactivate`.
 
 Mac:
 `source project-NMR/bin/activate`
@@ -28,7 +28,7 @@ Mac:
 Windows:
 `source project-NMR/Scripts/activate`
 
-**Install packages**.
+4. **Install packages**.
 First install a general python package:
 
 `pip install pandas==2.3.3 jupyter`
@@ -37,11 +37,11 @@ Then look up a package online relevant to your research and install it:
 
 `pip install <YOUR PACKAGE HERE>`
 
-**Take a snapshot**. Export the list of packages in the environment and save it to file:
+5. **Take a snapshot**. Export the list of packages in the environment and save it to file:
 
 `pip freeze > YOUR-REPO-NAME/env/requirements-project-NMR.txt` (remember to change YOUR-REPO-NAME to the name of the folder containing your repo) and `deactivate`.
 
-**Add the file to your github repository**. We want to add the requirements file but not the whole venv folder. First, make sure your terminal is in the right folder (you can change it by using `Open Folder` in Visual Studio Code). Make sure the `project-NMR` venv folder is not in the repo (or add `project-NMR` to your .gitignore!). Add files to the repo using the Source Control extension.
+6. **Add the file to your github repository**. We want to add the requirements file but not the whole venv folder. First, make sure your terminal is in the right folder (you can change it by using `Open Folder` in Visual Studio Code). Make sure the `project-NMR` venv folder is not in the repo (or add `project-NMR` to your .gitignore!). Add files to the repo using the Source Control extension.
 
 At this point, your environment is safely recorded, including the exact package versions - have a look at the requirements-project-NMR.txt. It is safe to delete the venv project as we can recreate it from the requirements file. Delete `project-NMR` using VSC's file explorer.
 
