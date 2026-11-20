@@ -8,7 +8,6 @@ By the end of today, you can:
 - document a project so future-you or a collaborator can understand it without hours of digging or emails
 - use some key UCL systems for data storage and sharing
 - share and archive a project as a citable output - GitHub → Zenodo DOI, data to an appropriate repository
-- judge what "reproducible and FAIR enough" looks like for your own work, and leave with one concrete change to make
 
 ## Plan
 | Section | Duration |
@@ -67,9 +66,6 @@ Here's the "who does this help?" table, built from what came up in the room toda
 
 ### What problems have we covered today?
 The end of the rerun test asks everyone to make a note of anything that stopped them reproducing a previous project. Let us know the issues you found and we can discuss whether we have discussed solutions today - [menti](https://www.menti.com/alyp8mf53k7h).
-
-### FAIR-enough, not FAIR-perfect
-We want our work to be transparent and understandable so people can use it (and ideally earn us a few more citations). Nobody's project is perfectly FAIR but we should all be thinking about what is FAIR-enough for each project we work on.
 
 Using the last [menti](https://www.menti.com/alyp8mf53k7h) poll, choose which example from today you're most likely to implement in your work — write the README, snapshot the environment, move data to RDSS, tag a release, or something else entirely.
 
