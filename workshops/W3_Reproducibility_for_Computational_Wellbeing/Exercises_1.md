@@ -10,7 +10,6 @@ Log where it breaks, or where you got stuck just trying to find things in step 1
 
 Some common culprits:
 
-- hard-coded file paths that only exist on your machine
 - a package that's a different version now, or missing entirely
 - a step you did manually and never wrote down
 - raw data that's been moved, renamed, or was never saved separately at all
