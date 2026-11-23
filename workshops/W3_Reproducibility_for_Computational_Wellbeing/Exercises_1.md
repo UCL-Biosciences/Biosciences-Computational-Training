@@ -3,10 +3,13 @@
 ## The rerun test (15 mins)
 Dig out a project you haven't touched in at least 6 months.
 
-Look at the files. Can you find everything you'd need to understand and rerun this project — raw data, metadata, code, documentation, results? Note anything missing.
-**Make sure you copy/save/protect any important files**. If there is anything too important to lose, don't try to reproduce anything, just assess whether you _could_ reproduce outputs using the info available. If you are trying to reproduce it, try to rerun the code. Without changing anything, see if you can get from raw data to a known output or figure.
+Look at the files. Can you find everything you'd need to understand and rerun this project — raw data, metadata, code, documentation, results? See if you can answer these questions from what is in the files:
+- what is the project and what are the aims?
+- what and where are the data?
+- what analyses have you done? Why and how?
+- what is the current state of the project? Who have you shared it with and where is it published?
 
-Log where it breaks, or where you got stuck just trying to find things in step 1.
+If there is some code, try to re-run it (**make sure you are not overwriting any important outputs!!**). If it fails, why?
 
 Some common culprits:
 
@@ -19,7 +22,7 @@ Some common culprits:
 
 Make a note of something that broke. At the end of the session, we'll look at everyone's problems and see if we have addressed any of them.
 
-## Project rescue (25 mins)
+## Project organisation (25 mins)
 Here we discuss how naming conventions and project organisation help rescue disorganised projects.
 
 ### File Naming
@@ -58,6 +61,8 @@ project-name/
 ├── docs/             # protocols, notes, decisions
 └── env/              # renv.lock, environment.yml, requirements.txt
 ```
+#### Reorganise projects
+Let's introduce this structure and renaming principles to our project from weeks 1 and 2.
 
 Using a standard project structure is easier and more reliable than starting a new structure every time you start a project. Here is how you can do it:
 1. Download [this example project structure](/workshops/W3_Reproducibility_for_Computational_Wellbeing/project-structure.zip) and extract all the contents.
