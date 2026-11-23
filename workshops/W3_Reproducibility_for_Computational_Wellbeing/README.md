@@ -55,6 +55,8 @@ Today is about closing that gap with some practical steps that will make it easi
 
 We'll build up a picture of *why* each habit matters as we go, using a running "who does this help?" check — yourself, your collaborators, or the wider community. By the end of the session we'll reveal the full picture, built from your answers.
 
+> If anyone doesn't have content from previous weeks, you can [fork](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo) mine. I will make it public then show you how to fork it.
+
 The [first exercise](Exercises_1.md) covers project organisation. The [second exercise](Exercises_2.md) sharing your project and making sure it is reproducible.
 
 ## Wrap-up discussion
