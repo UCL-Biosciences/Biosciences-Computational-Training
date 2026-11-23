@@ -40,7 +40,7 @@ The questions:
 ### Discuss responses
 Chances are, almost everyone in the room has a story for at least one of these. 
 
-Lack of reproducibility isn't a rare edge case and it affects us in many ways:
+Lack of reproducibility isn't only about helping science, it affects us in many ways:
 - **Yourself** — you lose time re-figuring-out your own past work, and don't have total confidence in the results.
 - **Your collaborators/colleagues** — they can't run what you sent them so repeat the exercise and redo it themselves.
 - **The wider scientific community** — code that doesn't run can't be used by others. Results that aren't reproducible have limited scientific value.
