@@ -23,6 +23,10 @@ By the end of today, you can:
 ### Making our git repositories fully reproducible, shareable projects.
 The files we made in week 1 are now fully managed by git (week 2). Now we'll look at how to make the project as reproducible and shareable possible, making the most of UCL systems. These are habits that transfer to any research you do outside of the training series.
 
+**Why**
+1. Good project management makes our lives easier as well as our work better and more reproducible/FAIR
+2. AI produces huge amounts of work. If we are not careful, it can become messy and overwhelming. Plus AI is good at tasks and operations, but less so on project management and organisation - this week will help you enjoy the benefits of AI without getting overwhelmed.
+
 ### Participant practice
 Let's talk about your experience of reproducibility using this menti quiz. [Link](https://www.menti.com/alyp8mf53k7h):
 
