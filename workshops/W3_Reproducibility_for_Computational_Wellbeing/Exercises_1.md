@@ -1,7 +1,7 @@
 # Exercise 1 - Rerun Test, Structure Rescue, and What's In The Repo (75 mins)
 
 ## The rerun test (15 mins)
-Dig out a project you haven't touched in at least 6 months.
+Dig out a project you haven't touched in at least 6 months. **Note this is not the project from weeks 1 and 2. We use a different one for this exercise only**
 
 Look at the files. Can you find everything you'd need to understand and rerun this project — raw data, metadata, code, documentation, results? See if you can answer these questions from what is in the files:
 - what is the project and what are the aims?
