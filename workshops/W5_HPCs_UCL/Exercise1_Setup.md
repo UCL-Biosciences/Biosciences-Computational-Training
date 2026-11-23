@@ -102,7 +102,6 @@ python3 -m venv moleRatvenv
 source moleRatvenv/bin/activate
 # Within the venv, use pip to install required packaes
 pip install numpy
-pip install matplotlib # if you get a pillow error, try running this first: pip install --no-binary=:all: pillow
 # Once finished, get out of the venv
 deactivate
 ```
@@ -116,13 +115,20 @@ source moleRatvenv/bin/activate
 ```
 
 ### Copying input data
+#### Copying files from a location on cluster into your home directory
+You can copy a file into a destination location through the cp command
+```
+cp /path/to/molerat ~/moleratData
+```
+
+#### Extension - Copying local files onto the cluster
 You can copy files from your laptop directly to the cluster in VSC by dragging them into the explorer or copy-pasting into the explorer (as explained [here](https://code.visualstudio.com/docs/editing/getting-started/userinterface#_explorer-view)).
 
 If that doesn't work, you can copy from the command line using commands like `scp`:
 
 ```
 #Run this on your LOCAL device
-scp /path/to/your/data jschneid@pchuckle:/home/csUserName/path/you/want
+scp /path/to/your/data user@pchuckle:/home/csUserName/path/you/want
 ```
 
 Now you should have all the code, libraries and data needed to run your analysis on the HPC!
