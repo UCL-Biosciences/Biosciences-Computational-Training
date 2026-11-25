@@ -49,6 +49,8 @@ If the requested resources are not immediately available, the job remains in a q
 ## Job Scripts
 We submit jobs using scripts like the one below. You can download this job script [here](/workshops/W5_HPCs_UCL/scripts/submit_job.sh) and transfer it to your project on the HPC like we did with the the `.py` script, above. Once you have sent it to the HPC, make sure to EDIT the file paths so the HPC knows where your files are!
 
+*Tip: To find the absolute path of a file, use `realpath <file>`*
+
 ```
 # MEMORY AND RESOURCES
 #$ -l tmem=256M
