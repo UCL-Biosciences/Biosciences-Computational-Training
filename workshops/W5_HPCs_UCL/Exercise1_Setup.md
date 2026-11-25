@@ -62,7 +62,11 @@ It is possible to use more recent versions of VSC, however this requires further
 ## Clone your git repository
 In Visual Studio Code, you can clone repositories by clicking on the `Source Control` extension, click `Clone Repository` > `Clone from Github`. This should show you a list of github repositories you can clone. If it doesn't, you might not be logged into Github in VSC. Log in by clicking the accounts button (bottom left of VSC, a head and shoulders icon in a circle, above the gear/settings sign) and logging into github.
 
-> Command line equivalent: clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remember to change the path to your repository)
+> Command line equivalent: clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remember to change the path to your repository, this path can be found via the Github webapp)
+
+<img width="942" height="408" alt="image" src="https://github.com/user-attachments/assets/4c3f2478-6d98-47b2-b17e-1f3b9f381ef2" />
+
+
 
 Why wouldn't we just copy over the relevant files??
 
