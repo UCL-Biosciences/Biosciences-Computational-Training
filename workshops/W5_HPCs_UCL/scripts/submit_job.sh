@@ -6,7 +6,6 @@
 # OTHER
 #$ -S /bin/bash
 #$ -j y
-#$ -o logs/
 #$ -N test-python
 #------------
 echo "Running on host: $(hostname)"
