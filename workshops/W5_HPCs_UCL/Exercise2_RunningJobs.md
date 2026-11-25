@@ -58,8 +58,7 @@ We submit jobs using scripts like the one below. You can download this job scrip
 # OTHER
 #$ -S /bin/bash
 #$ -j y
-#$ -o logs/
-#$ -N test-python
+#$ -N moleRatActivity
 #------------
 echo "Running on host: $(hostname)"
 echo "Start time: $(date)"
@@ -78,7 +77,7 @@ echo "End Time: $(date)"
 
 Save and close the file and submit it: `qsub /path/to/script.sh`. Some things to check on its progress:
 - `qstat` tells you the status of all your jobs, including their unique job IDs
-- You can use the job ID to find its output. By default it will be `test-python.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
+- You can use the job ID to find its output. By default it will be `moleRatActivity.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
 - add, commit and push your scripts to your github repo as we have done previously.
 
 Finally, download the output and check it on your local computer. You can download it in Visual Studio Code by right-clicking on a file and selecting `Download` - simples!
