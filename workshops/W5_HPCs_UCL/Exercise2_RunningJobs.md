@@ -61,6 +61,8 @@ We submit jobs using scripts like the one below. You can download this job scrip
 #$ -S /bin/bash
 #$ -j y
 #$ -N moleRatActivity
+#$ -cwd
+
 #------------
 echo "Running on host: $(hostname)"
 echo "Start time: $(date)"
