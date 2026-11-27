@@ -62,7 +62,11 @@ It is possible to use more recent versions of VSC, however this requires further
 ## Clone your git repository
 In Visual Studio Code, you can clone repositories by clicking on the `Source Control` extension, click `Clone Repository` > `Clone from Github`. This should show you a list of github repositories you can clone. If it doesn't, you might not be logged into Github in VSC. Log in by clicking the accounts button (bottom left of VSC, a head and shoulders icon in a circle, above the gear/settings sign) and logging into github.
 
-> Command line equivalent: clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remember to change the path to your repository)
+> Command line equivalent: clone your repository: `git clone https://github.com/YOUR-REPO-PATH` (remember to change the path to your repository, this path can be found via the Github webapp)
+
+<img width="942" height="408" alt="image" src="https://github.com/user-attachments/assets/4c3f2478-6d98-47b2-b17e-1f3b9f381ef2" />
+
+
 
 Why wouldn't we just copy over the relevant files??
 
@@ -102,7 +106,6 @@ python3 -m venv moleRatvenv
 source moleRatvenv/bin/activate
 # Within the venv, use pip to install required packaes
 pip install numpy
-pip install matplotlib # if you get a pillow error, try running this first: pip install --no-binary=:all: pillow
 # Once finished, get out of the venv
 deactivate
 ```
@@ -116,13 +119,20 @@ source moleRatvenv/bin/activate
 ```
 
 ### Copying input data
+#### Copying files from a location on cluster into your home directory
+You can copy a file into a destination location through the cp command
+```
+cp /path/to/molerat ~/moleratData
+```
+
+#### Extension - Copying local files onto the cluster
 You can copy files from your laptop directly to the cluster in VSC by dragging them into the explorer or copy-pasting into the explorer (as explained [here](https://code.visualstudio.com/docs/editing/getting-started/userinterface#_explorer-view)).
 
 If that doesn't work, you can copy from the command line using commands like `scp`:
 
 ```
 #Run this on your LOCAL device
-scp /path/to/your/data jschneid@pchuckle:/home/csUserName/path/you/want
+scp /path/to/your/data user@pchuckle:/home/csUserName/path/you/want
 ```
 
 Now you should have all the code, libraries and data needed to run your analysis on the HPC!

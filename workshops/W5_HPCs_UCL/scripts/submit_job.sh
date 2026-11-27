@@ -6,8 +6,9 @@
 # OTHER
 #$ -S /bin/bash
 #$ -j y
-#$ -o logs/
-#$ -N test-python
+#$ -N moleRatActivity
+#$ -cwd
+
 #------------
 echo "Running on host: $(hostname)"
 echo "Start time: $(date)"

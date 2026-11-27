@@ -49,6 +49,8 @@ If the requested resources are not immediately available, the job remains in a q
 ## Job Scripts
 We submit jobs using scripts like the one below. You can download this job script [here](/workshops/W5_HPCs_UCL/scripts/submit_job.sh) and transfer it to your project on the HPC like we did with the the `.py` script, above. Once you have sent it to the HPC, make sure to EDIT the file paths so the HPC knows where your files are!
 
+*Tip: To find the absolute path of a file, use `realpath <file>`*
+
 ```
 # MEMORY AND RESOURCES
 #$ -l tmem=256M
@@ -58,8 +60,9 @@ We submit jobs using scripts like the one below. You can download this job scrip
 # OTHER
 #$ -S /bin/bash
 #$ -j y
-#$ -o logs/
-#$ -N test-python
+#$ -N moleRatActivity
+#$ -cwd
+
 #------------
 echo "Running on host: $(hostname)"
 echo "Start time: $(date)"
@@ -78,7 +81,7 @@ echo "End Time: $(date)"
 
 Save and close the file and submit it: `qsub /path/to/script.sh`. Some things to check on its progress:
 - `qstat` tells you the status of all your jobs, including their unique job IDs
-- You can use the job ID to find its output. By default it will be `test-python.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
+- You can use the job ID to find its output. By default it will be `moleRatActivity.o${JOB_ID}` and will be saved in the folder you were in when you submitted the job.
 - add, commit and push your scripts to your github repo as we have done previously.
 
 Finally, download the output and check it on your local computer. You can download it in Visual Studio Code by right-clicking on a file and selecting `Download` - simples!

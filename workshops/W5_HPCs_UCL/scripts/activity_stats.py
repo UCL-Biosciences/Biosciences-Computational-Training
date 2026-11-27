@@ -14,7 +14,7 @@ Usage:
 import numpy
 
 ### change this file to run the code for a different dataset
-filename = 'data/molerat_activity_v1.csv'
+filename = '/share/ref/molerats/molerat_activity_v1.csv'
 
 # --- data in ---
 data = numpy.loadtxt(fname=filename, delimiter=',')
